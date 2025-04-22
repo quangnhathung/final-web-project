@@ -13,7 +13,7 @@
 - **script**  
   Thư mục này chứa các file JavaScript giúp thêm tính năng động và tương tác cho trang web:
   - **homPage**: File `main.js` xử lý các tương tác trên trang chủ.
-  - **subPage1**: File `style.css` được liệt kê ở đây (lưu ý: tên file có thể cần được đổi thành tên phù hợp như `main.js` nếu nội dung file thực sự là JavaScript).
+  - **subPage1**: script của trang phụ, tạo thêm cho từng người.
 
 - **Các file HTML gốc**  
   Đây là các file HTML định nghĩa cấu trúc của giao diện:
