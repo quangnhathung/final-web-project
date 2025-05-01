@@ -1,5 +1,8 @@
 ## MÔ tả cấu trúc dự án:
 
+
+- **bootstrap**
+  Tài nguyên bootstrap framework  
 - **assets**  
   Thư mục này chứa tất cả các tài nguyên hình ảnh được sử dụng trong dự án. Các hình ảnh được phân loại theo trang sử dụng, ví dụ như:
   - **homePage**: Chứa các ảnh cho trang chủ (ví dụ: `example.png`).
