@@ -4,7 +4,7 @@
   Tài nguyên bootstrap framework
 
 - **src**  
-  js và css sẽ nằm trong này
+  html,js và css sẽ nằm trong này
 
 - **assets**  
   Thư mục này chứa tất cả các tài nguyên hình ảnh được sử dụng trong dự án. Các hình ảnh được phân loại theo trang sử dụng, ví dụ như:
@@ -27,7 +27,8 @@
 - **Các file HTML gốc**  
   Đây là file HTML gốc giao diện:
   - `main.html`: Trang chủ của dự án.
-  - `page1.html`: Trang phụ 1 của dự án. (có thể đổi tên theo chức năng như `login.html`,`introduce.html`,...)
+  - tạo các thư mục theo vai trò của từng nhóm trang
+    - `page1.html`: Trang phụ 1 của dự án. (có thể đổi tên theo chức năng như `login.html`,`introduce.html`,...)
 
 ## Hướng Dẫn Sử Dụng
 
@@ -37,7 +38,7 @@
 ## Ghi Chú (Quan trọng)
 
 - Nếu cần thêm tài nguyên (ảnh, CSS, JS) cho các trang khác, có thể tạo thêm thư mục tương ứng bên trong các thư mục **assets**, **css**, và **script** (theo từng phần của mỗi người).
-- Đặt tên file và thư mục được sử dụng thống nhất theo từng phần của mỗi người
+- Đặt tên file và thư mục được sử dụng thống nhất theo vai trò từng người
 - Không chỉnh sửa hay động vào code người khác, chỉ thao tác trên code của bản thân
 - nhớ pull trước khi push lên github (`git pull origin master`)
 - nếu xảy ra conllíons thì nhắn tui trước khi sửa
