@@ -11,6 +11,7 @@
 
   - **homePage**: Chứa các ảnh cho trang chủ (ví dụ: `example.png`).
   - **subPage1**: Chứa các ảnh cho trang phụ 1 (ví dụ: `example.png`).
+  - **public**: chứa tài nguyên chung của pj (chứa ảnh sp)
 
 - **css**  
   Chứa các file CSS dùng để định dạng giao diện cho trang web. Các file CSS được phân chia theo chức năng của từng trang:
@@ -24,10 +25,9 @@
   - **homPage**: File `main.js` xử lý các tương tác trên trang chủ.
   - **subPage1**: script của trang phụ, tạo thêm cho từng người.
 
-- **Các file HTML gốc**  
-  Đây là file HTML gốc giao diện:
+- **Page**  
   - `main.html`: Trang chủ của dự án.
-  - tạo các thư mục theo vai trò của từng nhóm trang
+  - Tạo các thư mục theo vai trò của từng nhóm trang
     - `page1.html`: Trang phụ 1 của dự án. (có thể đổi tên theo chức năng như `login.html`,`introduce.html`,...)
 
 ## Hướng Dẫn Sử Dụng
