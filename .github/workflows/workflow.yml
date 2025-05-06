@@ -1,0 +1,30 @@
+name: Public to github.io
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Push to target repo
+        run: |
+          git clone https://x-access-token:${{ secrets.TARGET_REPO_TOKEN }}@github.com/quangnhathung/quangnhathung.github.io.git target-repo
+          rsync -av --exclude='.git' --exclude='.github' ./ target-repo/
+          cd target-repo
+          git add .
+          git commit -m "Sync from source repo: $GITHUB_REPOSITORY@$GITHUB_SHA" || echo "No changes to commit"
+          git push origin master
