@@ -13,12 +13,118 @@
       href="../../bootstrap-5.3.5-dist/css/bootstrap-utilities.css"
     />
     <link rel="stylesheet" href="../css/homePage/main.css" />
-    <link rel="stylesheet" href="../../assets/bootstrap-icons.css">
-
+    <link rel="stylesheet" href="../../assets/bootstrap-icons.css" />
   </head>
   <body>
-    
+    <nav class="navbar navbar-expand bg-white" style="max-height: 70px">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="main.html">
+          <img
+            src="../../assets/homePage/logo.png"
+            class="img-fluid"
+            alt="logo not found"
+            id="logo"
+          />
+        </a>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active d-flex flex-column justify-content-center align-content-center"
+                aria-current="page"
+                href="main.html"
+              >
+                <i class="bi bi-house-door-fill fs-4 icon"></i>
+                <p>HOME</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active d-flex flex-column justify-content-center align-content-center"
+                aria-current="page"
+                href="#"
+              >
+                <i class="bi bi-basket fs-4 icon"></i>
+                <p>ALL PRODUCTS</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active d-flex flex-column justify-content-center align-content-center"
+                aria-current="page"
+                href="#"
+              >
+                <i class="bi bi-cart3 fs-4 icon"></i>
+                <p>CART</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active d-flex flex-column justify-content-center align-content-center"
+                aria-current="page"
+                href="#"
+              >
+                <i class="bi bi-wallet2 fs-4 icon"></i>
+                <p>WALLET</p>
+              </a>
+            </li>
+
+            <!-- dropdow-menu -->
+            <li class="nav-item dropdown text-center" id="user">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person-circle fs-4" id="userIcon"></i>
+                <p id="usertext">USER</p>
+              </a>
+              <ul
+                class="dropdown-menu"
+                style="margin-top: -11px"
+                id="dropdown-menu"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">Thông tin tài khoản</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Danh sách yêu thích</a>
+                </li>
+                <li style="height: 40px; border-radius: 30px">
+                  <a class="dropdown-item d-flex" href="#" style>
+                    <i class="bi bi-cart3"></i>
+                    <p>&nbsp Giỏ hàng</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="search-container d-flex align-items-center"  id="search-container">
+            <input type="text" class="form-control" placeholder="Search" />
+            <button class="btn btn-search">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+
+          <div class="source-git" title="Source Code">
+            <a href="#">
+              <i class="bi bi-github fs-2"></i>
+            </a>
+          </div>
+
+          
+        </div>
+      </div>
+    </nav>
+    <script src="../../bootstrap-5.3.5-dist/js/bootstrap.esm.js"></script>
     <script src="../../bootstrap-5.3.5-dist/js/bootstrap.js"></script>
     <script src="../../bootstrap-5.3.5-dist/js/bootstrap.bundle.js"></script>
   </body>
