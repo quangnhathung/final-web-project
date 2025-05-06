@@ -1,0 +1,133 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: rgb(254, 244, 231);
+    color: #111315;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  
+  header {
+    background-color: white;
+    padding: 3px;
+    text-align: center;
+  }
+  
+  header img {
+    height: 160px;
+  }
+  
+  .search-container {
+    background: white;
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    border-radius: 8px;
+  }
+  
+  .search-container input {
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .product-page {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product-img img {
+    height: 50rem;
+    width: 18rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .thumbnail img {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 6px;
+  }
+  
+  .product-info {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .product-info h1 {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .product-info p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .add,
+  .buy {
+    padding: 10px 30px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .add {
+    background: grey;
+    color: white;
+  }
+  
+  .buy {
+    background: black;
+    color: white;
+  }
+  
+  footer {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    border-top: 1px solid #ddd;
+  }
+  
+  .flex {
+    margin-top: 10px;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    display: flex;
+    color: black;
+    
+  }
+  
