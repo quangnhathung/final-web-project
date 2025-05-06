@@ -1,54 +1,80 @@
 /* --------------------set background color---------------------------- */
-body{
+body {
     background-color: rgb(254, 244, 231);
 }
 
 /* --------------------navBar---------------------------- */
 
-ul{
+ul {
     list-style-type: none;
 }
 
-nav{
+nav {
     box-shadow: 5px 5px 10px rgba(2, 2, 2, 0.114);
 }
-#logo{
+
+#logo {
     height: 180px;
 }
-.navbar-brand{
+
+.navbar-brand {
     margin-right: 40px;
 }
-.nav-item{
+
+.nav-item {
     margin-left: 5px;
     margin-right: 20px;
 }
 
-[class*="icon"]{
+[class*="icon"] {
     text-align: center;
-    margin-top:15px;
+    margin-top: 15px;
     margin-bottom: -5px;
 }
 
-[class*="icon"] > p {
+[class*="icon"]>p {
     text-align: center;
     margin-top: 1px;
 }
-#user{
+
+#user {
     padding-top: 15px;
 }
 
-#usertext{
+#usertext {
     margin-top: -4px;
-} 
+}
 
-#user:hover #dropdown-menu{
+#user:hover #dropdown-menu {
     display: block;
 }
 
+#github {
+    margin-top: -4px;
+
+}
+
+
+#github:active .icon {
+    color: #09fa2d;
+    transition: color 0.2s ease;
+}
+
+.icon {
+    color: #00000075;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.nav-item:hover .icon,
+.nav-link:hover .icon {
+    color: #0d6efd;
+    transform: scale(1.1, 1.1);
+}
 
 .search-container {
     max-width: 320px;
     margin: 2rem auto;
+    margin-right: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.22);
     border-radius: 12px;
     overflow: hidden;
@@ -75,7 +101,7 @@ nav{
     background-color: #ececec;
 }
 
-.form-control:focus{
+.form-control:focus {
     border: 2px solid transparent;
     width: 15em;
     height: 2.5em;
@@ -87,13 +113,13 @@ nav{
     transition: all 0.75s;
 }
 
-.source-git{
+.source-git {
     margin-left: -80px;
     margin-right: 20px;
 }
 
-#bar > li:hover > a > i, 
-#bar > li:hover > a > p {
-    transform: 0.1s scale(1.1,1.1);
-    font-weight:500;
+#bar>li:hover>a>.icon,
+#bar>li:hover>a>p {
+    transform: 0.1s scale(1.1, 1.1);
+    font-weight: 500;
 }
