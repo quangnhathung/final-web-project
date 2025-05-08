@@ -38,7 +38,7 @@ nav {
     margin-bottom: -5px;
 }
 
-[class*="icon"]>p {
+.nav-item>a>p  {
     text-align: center;
     margin-top: 1px;
 }
