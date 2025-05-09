@@ -149,7 +149,7 @@ nav {
     position: fixed;
     bottom: 40px;
     right: 30px;
-    display: none;
+    display: block;
     z-index: 1000;
     width: 45px;
     height: 45px;
