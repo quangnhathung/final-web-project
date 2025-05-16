@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../../css/homePage/main.css" />
   <link rel="stylesheet" href="../../../assets/bootstrap-icons.css">
 
-  <link rel="stylesheet" href="../../css/subPage1/product detail/productdetail1.css">
+  <link rel="stylesheet" href="../../css/subPage1/product detail/checkerboard.css">
 
 </head>
 
@@ -111,50 +111,101 @@
       <div class="row product-container g-0">
         <div class="col-md-6 col-lg-7">
           <div class="product-img p-3">
-            <img src="../../../assets/public/0hZe7KE.png" alt="SHEEPSMAN FACE 6-PANEL CAP">
+            <img src="../../../assets/public/2p9OYYL.jpeg" alt="checkerboard/New Tee">
           </div>
         </div>
 
         <!-- cột thông tin của chi tiêt sản phẩm -->
         <div class="col-md-6 col-lg-5">
           <div class="product-info">
-            <h1>SHEEPSMAN FACE 6-PANEL CAP</h1>
-            <h2 class="product-price mb-4"> 143.000đ</h2>
+            <h1>CHECKERBOARD / New Tee</h1>
+            <h4>
+              <span class="product-price mb-4" text-danger fs-3> 195.000</span>
+              <span class="text-muted text-decoration-line-through fs-6"> 390.000</span>
+            </h4>
             <hr>
           </div>
 
 
           <div class="thumbnail">
-            <img src="../../../assets/public/0hZe7KE.png" alt="thumbnail">
+            <img src="checkerboard.jpeg">
+            <img src="../../../assets/public/2p9OYYL.jpeg">
           </div>
           <hr>
 
           <!-- Màu sắc-->
-          <h5 style="text-align: left;">Màu:</h5>
-          <div class="color-options mb-4">
-            <button class="btn btn-outline-dark color-btn active">Black</button>
-            <button class="btn btn-outline-secondary color-btn">White</button>
+          <div class="mb-3">
+            <p class="fw-medium mb-1">Màu:</p>
+            <div class="d-flex flex-wrap gap-2">
+              <input type="radio" class="btn-check" name="color" id="color1" checked>
+              <label class="btn btn-outline-dark" for="color1">BLACK</label>
+
+              <input type="radio" class="btn-check" name="color" id="color2">
+              <label class="btn btn-outline-dark" for="color2">WHITE</label>
+
+
+            </div>
           </div>
           <hr>
-          <!-- số lượng-->
-           <h5> Số Lượng:</h5>
-           <div class="input-group quantify-control mb-4">
-            <button class="btn btn-outline-secondary" type="button" onclick="decreaseQuantity()"> - </button>
-            <input type="number" class="form-control text-center" value="1" min="1" id="quantity">
-            <button class="btn btn-outline-secondary" type="button" onclick="increaseQuantity()"> + </button>
-           </div>
-<hr>
 
+          <!-- Size -->
+          <div class="mb-3">
+            <p class="fw-medium mb-1">Size:</p>
+            <div class="d-flex gap-2">
+
+              <input type="radio" class="btn-check" name="size" id="sizeM" checked>
+              <label class="btn btn-outline-dark" for="sizeM">S</label>
+
+              <input type="radio" class="btn-check" name="size" id="sizeM" checked>
+              <label class="btn btn-outline-dark" for="sizeM">M</label>
+
+              <input type="radio" class="btn-check" name="size" id="sizeL">
+              <label class="btn btn-outline-dark" for="sizeL">L</label>
+            </div>
+          </div>
+          <hr>
+        
+          <!-- Số lượng -->
+            <div class="mb-3">
+                <label class="fw-semibold mb-1">Số lượng:</label>
+                <div class="input-group" style="width: 140px;">
+                  <button class="btn btn-outline-secondary" type="button" onclick="decreaseQty()">-</button>
+                  <input type="text" class="form-control text-center" id="quantity" value="1" readonly>
+                  <button class="btn btn-outline-secondary" type="button" onclick="increaseQty()">+</button>
+                </div>
+            </div>
+            <hr>
+          <!--Nút-->
           <div class="buttons">
             <button class="add btn btn-dark ">
               <a href="../error/404-notfound.html"> Giỏ hàng </a> </button>
-            <button class=" buy btn btn-dark" ><a href="../error/404-notfound.html">
+            <button class=" buy btn btn-dark"><a href="../error/404-notfound.html">
                 Mua Ngay</a> </button>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   </main>
+  <script>
+    function increaseQty() {
+      let qtyInput = document.getElementById("quantity");
+      let value = parseInt(qtyInput.value);
+      qtyInput.value = value + 1;
+    }
+
+    function decreaseQty() {
+      let qtyInput = document.getElementById("quantity");
+      let value = parseInt(qtyInput.value);
+      if (value > 1) {
+        qtyInput.value = value - 1;
+      }
+    }
+    function changeImage(thumb) {
+      const mainImage = document.getElementById("mainImage");
+      mainImage.src = thumb.src;
+    }
+  </script>
+
   <!--  ************************************************FOOTER**********************************************8-->
   <footer>
 
@@ -178,7 +229,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="../../script/subPage1/product-detail/checkboard.js"></script>
 </body>
 
 </html>
