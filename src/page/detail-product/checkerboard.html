@@ -103,37 +103,32 @@
   <button id="backToTop" class="btn btn-dark rounded-circle">
     <i class="bi bi-arrow-up-circle m-0"></i>
   </button>
-  <!-- ******************************************CONTENT*****************************************************8888-->
+  <!-- ******************************************CONTENT*****************************************************-->
   <main class="product-page">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <!-- Ảnh lớn -->
+          <div class="text-center">
+            <img id="mainImage" src="../../../assets/public/2p9OYYL.jpeg" class="img-bordered" alt="Ảnh lớn">
+          </div>
 
-    <div class="container">
-
-      <div class="row product-container g-0">
-        <div class="col-md-6 col-lg-7">
-          <div class="product-img p-3">
-            <img src="../../../assets/public/2p9OYYL.jpeg" alt="checkerboard/New Tee">
+          <!-- Thumbnails -->
+          <div class="mt-3 d-flex justify-content-center gap-2">
+            <img src="../../../assets/public/2p9OYYL.jpeg" class="img-thumbnail thumb-img img-bordered"
+              onclick="changeImage(this)" alt="thumb1">
+            <img src="../../../assets/public/2p9OYYL.jpeg" class="img-thumbnail thumb-img img-bordered"
+              onclick="changeImage(this)" alt="thumb2">
           </div>
         </div>
 
-        <!-- cột thông tin của chi tiêt sản phẩm -->
-        <div class="col-md-6 col-lg-5">
-          <div class="product-info">
-            <h1>CHECKERBOARD / New Tee</h1>
-            <h4>
-              <span class="product-price mb-4" text-danger fs-3> 195.000</span>
-              <span class="text-muted text-decoration-line-through fs-6"> 390.000</span>
-            </h4>
-            <hr>
-          </div>
-
-
-          <div class="thumbnail">
-            <img src="checkerboard.jpeg">
-            <img src="../../../assets/public/2p9OYYL.jpeg">
-          </div>
+        <!-- Cột thông tin sản phẩm -->
+        <div class="col-md-6">
+          <h4 class="fw-bold">/two-tone line/ Letter Mask</h4>
+          <p class="text-danger fw-bold fs-5">195.000<del class="text-muted fs-6">333.000đ</del></p>
           <hr>
 
-          <!-- Màu sắc-->
+          <!-- Màu -->
           <div class="mb-3">
             <p class="fw-medium mb-1">Màu:</p>
             <div class="d-flex flex-wrap gap-2">
@@ -164,47 +159,33 @@
             </div>
           </div>
           <hr>
-        
+
           <!-- Số lượng -->
-            <div class="mb-3">
-                <label class="fw-semibold mb-1">Số lượng:</label>
-                <div class="input-group" style="width: 140px;">
-                  <button class="btn btn-outline-secondary" type="button" onclick="decreaseQty()">-</button>
-                  <input type="text" class="form-control text-center" id="quantity" value="1" readonly>
-                  <button class="btn btn-outline-secondary" type="button" onclick="increaseQty()">+</button>
-                </div>
+          <div class="mb-3">
+            <label class="fw-semibold mb-1">Số lượng:</label>
+            <div class="input-group" style="width: 140px;">
+              <button class="btn btn-outline-secondary" type="button" onclick="decreaseQty()">-</button>
+              <input type="text" class="form-control text-center" id="quantity" value="1" readonly>
+              <button class="btn btn-outline-secondary" type="button" onclick="increaseQty()">+</button>
             </div>
-            <hr>
-          <!--Nút-->
-          <div class="buttons">
-            <button class="add btn btn-dark ">
-              <a href="../error/404-notfound.html"> Giỏ hàng </a> </button>
-            <button class=" buy btn btn-dark"><a href="../error/404-notfound.html">
-                Mua Ngay</a> </button>
+          </div>
+          <hr>
+
+          <!-- Nút -->
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-dark"> Giỏ hàng </a> </button>
+            <button class="btn btn-dark"> Mua ngay </a></button>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <script>
-    function increaseQty() {
-      let qtyInput = document.getElementById("quantity");
-      let value = parseInt(qtyInput.value);
-      qtyInput.value = value + 1;
-    }
 
-    function decreaseQty() {
-      let qtyInput = document.getElementById("quantity");
-      let value = parseInt(qtyInput.value);
-      if (value > 1) {
-        qtyInput.value = value - 1;
-      }
-    }
-    function changeImage(thumb) {
-      const mainImage = document.getElementById("mainImage");
-      mainImage.src = thumb.src;
-    }
-  </script>
+
+
+
+
+
 
   <!--  ************************************************FOOTER**********************************************8-->
   <footer>
@@ -229,7 +210,13 @@
       </div>
     </div>
   </footer>
-  <script src="../../script/subPage1/product-detail/checkboard.js"></script>
+
+
+<script src="../../script/subPage1/product-detail/checkboard.js"></script>
+<script src="../../../bootstrap-5.3.5-dist/js/bootstrap.esm.js"></script>
+<script src="../../../bootstrap-5.3.5-dist/js/bootstrap.js"></script>
+<script src="../../../bootstrap-5.3.5-dist/js/bootstrap.bundle.js"></script>
+
 </body>
 
 </html>
