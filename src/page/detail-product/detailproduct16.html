@@ -105,67 +105,69 @@
   </button>
   <!-- ******************************************CONTENT*****************************************************8888-->
   <main class="product-page">
-
-    <div class="container">
-
-      <div class="row product-container g-0">
-        <div class="col-md-6 col-lg-7">
-          <div class="product-img p-3">
-            <img src="../../../assets/public/2p9OYYL.jpeg" alt="checkerboard/New Tee">
+    <div class="container py-4">
+        <div class="row">
+          <!-- Cột hình ảnh -->
+          <!--<div class="col-md-6 text-center">
+            <img src="../../../assets/public/JJnYRaO.jpeg" class="img-fluid" style="max-width: 80%;" alt="Mask">
+            <div class="mt-2">
+              <img src="../../../assets/public/JJnYRaO.jpeg" class="img-thumbnail" style="width: 80px;" alt="Thumbnail">
+            </div>
+          </div>-->
+          <div class="col-md-6 text-center">
+            <!-- Ảnh lớn -->
+            <img id="mainImage" src="../../../assets/public/JJnYRaO.jpeg" class="img-fluid" style="max-width: 80%;" alt="Mask">
+          
+            <!-- Thumbnails -->
+            <div class="mt-3 d-flex justify-content-center gap-2">
+              <img src="../../../assets/public/JJnYRaO.jpeg" class="img-thumbnail thumb-img" style="width: 80px; cursor: pointer;" onclick="changeImage(this)">
+              <img src="../../../assets/public/JJnYRaO.jpeg" class="img-thumbnail thumb-img" style="width: 80px; cursor: pointer;" onclick="changeImage(this)">
+              <img src="../../../assets/public/JJnYRaO.jpeg" class="img-thumbnail thumb-img" style="width: 80px; cursor: pointer;" onclick="changeImage(this)">
+            </div>
           </div>
-        </div>
-
-        <!-- cột thông tin của chi tiêt sản phẩm -->
-        <div class="col-md-6 col-lg-5">
-          <div class="product-info">
-            <h1>CHECKERBOARD / New Tee</h1>
-            <h4>
-              <span class="product-price mb-4" text-danger fs-3> 195.000</span>
-              <span class="text-muted text-decoration-line-through fs-6"> 390.000</span>
-            </h4>
+      
+          <!-- Cột thông tin sản phẩm -->
+          <div class="col-md-6">
+            <h4 class="fw-bold">/two-tone line/ Letter Mask</h4>
+            <p class="text-danger fw-bold fs-5">21.000đ <del class="text-muted fs-6">70.000đ</del></p>
             <hr>
-          </div>
-
-
-          <div class="thumbnail">
-            <img src="checkerboard.jpeg">
-            <img src="../../../assets/public/2p9OYYL.jpeg">
-          </div>
-          <hr>
-
-          <!-- Màu sắc-->
-          <div class="mb-3">
-            <p class="fw-medium mb-1">Màu:</p>
-            <div class="d-flex flex-wrap gap-2">
-              <input type="radio" class="btn-check" name="color" id="color1" checked>
-              <label class="btn btn-outline-dark" for="color1">BLACK</label>
-
-              <input type="radio" class="btn-check" name="color" id="color2">
-              <label class="btn btn-outline-dark" for="color2">WHITE</label>
-
-
-            </div>
-          </div>
-          <hr>
-
-          <!-- Size -->
-          <div class="mb-3">
-            <p class="fw-medium mb-1">Size:</p>
-            <div class="d-flex gap-2">
-
-              <input type="radio" class="btn-check" name="size" id="sizeM" checked>
-              <label class="btn btn-outline-dark" for="sizeM">S</label>
-
-              <input type="radio" class="btn-check" name="size" id="sizeM" checked>
-              <label class="btn btn-outline-dark" for="sizeM">M</label>
-
-              <input type="radio" class="btn-check" name="size" id="sizeL">
-              <label class="btn btn-outline-dark" for="sizeL">L</label>
-            </div>
-          </div>
-          <hr>
-        
-          <!-- Số lượng -->
+      
+            <!-- Màu -->
+            <div class="mb-3">
+                <p class="fw-medium mb-1">Màu:</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <input type="radio" class="btn-check" name="color" id="color1" checked>
+                  <label class="btn btn-outline-dark" for="color1">BLACK</label>
+      
+                  <input type="radio" class="btn-check" name="color" id="color2">
+                  <label class="btn btn-outline-dark" for="color2">WHITE</label>
+      
+                  <input type="radio" class="btn-check" name="color" id="color3">
+                  <label class="btn btn-outline-dark" for="color3">REEL WATER</label>
+      
+                  <input type="radio" class="btn-check" name="color" id="color4">
+                  <label class="btn btn-outline-dark" for="color4">GREIGE</label>
+      
+                  <input type="radio" class="btn-check" name="color" id="color5">
+                  <label class="btn btn-outline-dark" for="color5">NEUTRAL GRAY</label>
+                </div>
+              </div>
+            <hr>
+      
+            <!-- Size -->
+            <div class="mb-3">
+                <p class="fw-medium mb-1">Size:</p>
+                <div class="d-flex gap-2">
+                  <input type="radio" class="btn-check" name="size" id="sizeM" checked>
+                  <label class="btn btn-outline-dark" for="sizeM">M</label>
+      
+                  <input type="radio" class="btn-check" name="size" id="sizeL">
+                  <label class="btn btn-outline-dark" for="sizeL">L</label>
+                </div>
+              </div>
+            <hr>
+      
+            <!-- Số lượng -->
             <div class="mb-3">
                 <label class="fw-semibold mb-1">Số lượng:</label>
                 <div class="input-group" style="width: 140px;">
@@ -175,16 +177,15 @@
                 </div>
             </div>
             <hr>
-          <!--Nút-->
-          <div class="buttons">
-            <button class="add btn btn-dark ">
-              <a href="../error/404-notfound.html"> Giỏ hàng </a> </button>
-            <button class=" buy btn btn-dark"><a href="../error/404-notfound.html">
-                Mua Ngay</a> </button>
+      
+            <!-- Nút -->
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-dark">Thêm giỏ hàng</button>
+              <button class="btn btn-dark">Mua ngay</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </main>
   <script>
     function increaseQty() {
@@ -192,7 +193,7 @@
       let value = parseInt(qtyInput.value);
       qtyInput.value = value + 1;
     }
-
+  
     function decreaseQty() {
       let qtyInput = document.getElementById("quantity");
       let value = parseInt(qtyInput.value);
@@ -205,7 +206,6 @@
       mainImage.src = thumb.src;
     }
   </script>
-
   <!--  ************************************************FOOTER**********************************************8-->
   <footer>
 
@@ -229,7 +229,7 @@
       </div>
     </div>
   </footer>
-  <script src="../../script/subPage1/product-detail/checkboard.js"></script>
+
 </body>
 
 </html>
