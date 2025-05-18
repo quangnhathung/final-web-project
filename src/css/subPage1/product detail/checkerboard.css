@@ -315,6 +315,29 @@ nav {
   background-color: #343a40 !important;
   color: white;
 }
+/* Tất cả ảnh lớn và thumbnail cùng khung 300x300 và có border */
+  .img-bordered {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #000;
+    padding: 4px;
+    background-color: #fff;
+  }
+
+  /* Dành cho thumbnail: làm nhỏ lại một chút */
+  .thumb-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  /* Viền nổi bật cho thumbnail đang chọn */
+  .thumb-img.selected {
+    border: 2px solid #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.6);
+  }
 /* ---------------------------------------Footer -----------------------------------------------------------*/
 footer {
   background-color: white;
