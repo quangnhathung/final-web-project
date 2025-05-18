@@ -152,6 +152,7 @@ nav {
     display: block;
     z-index: 1000;
     width: 45px;
+    display:none;
     height: 45px;
     font-size: 2.5rem;
     border: none;
