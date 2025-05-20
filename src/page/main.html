@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="../css/homePage/default.css" />
     <link rel="stylesheet" href="../css/homePage/banner.css" />
+    <link rel="stylesheet" href="../css/homePage/products.css" />
     <link rel="stylesheet" href="../../assets/bootstrap-icons.css" />
   </head>
   <body>
@@ -208,36 +209,36 @@
       </button>
     </div>
 
-    <div class="container-fluid">
-      
-    </div>
-    <!-- --------------------top------- -->
-
+    <!-- --------------------top----------------->
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h4>TOPS</h4>
+          <h2>TOPS</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-6">
-          <div class="card" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="row" id="content-top" style="background-color: rgb(236, 229, 229);padding:2px; border-radius: 10px;">
+        <a href="#" class="col-md-6" id="main-top">
+          <img
+            src="../../assets/homePage/TOPS/main.jpg"
+            class="img-fluid img-top"
+            alt="not-found"
+            style="width: 100%"
+          />
+          <div class="overlay"></div>
+          <div class="wrapper">
+            <div>
+              <s>390.000đ</s>
+              <p style="font-size: 20px; color: red;">ƯU đãi: 99.000đ</p>
             </div>
+            <button
+              onclick="window.location.href='https://www.resizepixel.com/download'"
+              type="button"
+              class="btn btn-outline-light"
+            >
+              Mua ngay
+            </button>
           </div>
-        </div>
-        <div class="col-6">
-          <div class="row">
-            
-          </div>
-        </div>
+        </a>
       </div>
     </div>
 
@@ -286,7 +287,7 @@
         <span>© 2025 Web bán quần áo - Thiết kế web_Chiều T2</span>
       </div>
     </div>
-
+    <script src="../script/homePage/LoadTops.js"></script>
     <script src="../script/homePage/main.js"></script>
     <script src="../../bootstrap-5.3.5-dist/js/bootstrap.esm.js"></script>
     <script src="../../bootstrap-5.3.5-dist/js/bootstrap.js"></script>
