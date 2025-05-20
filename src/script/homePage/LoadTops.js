@@ -12,7 +12,7 @@ const contentTop = document.getElementById("content-top");
 
 Tops.forEach(product => {
     const col = document.createElement("div");
-    col.className = "col-md-3 pb-1 gx-2 gy-1 item-top";
+    col.className = "col-md-4  col-lg-3 pb-1 gx-2 gy-1 item-top";
 
     col.innerHTML = `
         <div class="card h-100">
@@ -31,7 +31,7 @@ Tops.forEach(product => {
                     </a>
                 </label>
 
-                <a href="${product.button}" class="btn btn-outline-dark fs-4 mt-auto">Mua ngay</a>
+                <a href="${product.button}" class="btn btn-outline-dark rounded-4 fs-4 mt-auto"><i class="bi bi-basket3"></i>Mua ngay</a>
             </div>
         </div>
     `;
