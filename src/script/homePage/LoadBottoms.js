@@ -1,9 +1,9 @@
 const Bottoms = [
-    {img: "../../../assets/homePage/Bottoms/1.JPEG" , name:"/floral youth/ KAKI PAN pinkkk™", button: "# ", price:"231.000đ",sale:"730.000d"},
-    {img: "../../../assets/homePage/Bottoms/3.JPEG"  , name:"/floral youth/ KAKI PAN YELLOW (special vesion)™", button: "# ", price:"375.000đ",sale:"430.000d"},
+    {img: "../../../assets/homePage/Bottoms/1.jpeg" , name:"/floral youth/ KAKI PAN pinkkk™", button: "# ", price:"231.000đ",sale:"730.000d"},
+    {img: "../../../assets/homePage/Bottoms/3.jpeg"  , name:"/floral youth/ KAKI PAN YELLOW (special vesion)™", button: "# ", price:"375.000đ",sale:"430.000d"},
     {img: "../../../assets/homePage/Bottoms/4.png"  , name:"/street-voca/ FLEECE TROUSERS™", button: "# ", price:"231.000đ",sale:"285.000d"},
-    {img: "../../../assets/homePage/Bottoms/5.JPEG"  , name:"/public icon/ SKATER SHORT KHAKI™", button: "# ", price:"129.000đ",sale:"350.000d"},
-    {img: "../../../assets/homePage/Bottoms/6.JPEG"  , name:"/trademark™/ CARGO PANTS FLANNEL SLEEVE", button: "# ", price:"95.000đ",sale:"550.000d"}
+    {img: "../../../assets/homePage/Bottoms/5.jpeg"  , name:"/public icon/ SKATER SHORT KHAKI™", button: "# ", price:"129.000đ",sale:"350.000d"},
+    {img: "../../../assets/homePage/Bottoms/6.jpeg"  , name:"/trademark™/ CARGO PANTS FLANNEL SLEEVE", button: "# ", price:"95.000đ",sale:"550.000d"}
 ]
 
 const contentBts = document.getElementById("content-bottom");

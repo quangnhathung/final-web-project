@@ -1,8 +1,8 @@
 const acess = [
-    {img: "../../../assets/homePage/ACCESSORIES/1.PNG" , name:"BlackSheeps Mini Shoulder Bag™", button: "# ", price:"355.000đ",sale:"195.000d"},
-    {img: "../../../assets/homePage/ACCESSORIES/2.JPEG" , name:"/two-tone line/ Big Logo Mask™", button: "# ", price:"70.000đ",sale:"21.000d"},
-    {img: "../../../assets/homePage/ACCESSORIES/3.JPEG" , name:"two-tone line/ Big Logo Mask™(black)", button: "# ", price:"70.000đ",sale:"21.000d"},
-    {img: "../../../assets/homePage/ACCESSORIES/4.JPEG" , name:"5THEWAY® 학교 PEN POUCH™ (Limited)", button: "# ", price:"150.000đ",sale:""},
+    {img: "../../../assets/homePage/ACCESSORIES/1.png" , name:"BlackSheeps Mini Shoulder Bag™", button: "# ", price:"355.000đ",sale:"195.000d"},
+    {img: "../../../assets/homePage/ACCESSORIES/2.jpeg" , name:"/two-tone line/ Big Logo Mask™", button: "# ", price:"70.000đ",sale:"21.000d"},
+    {img: "../../../assets/homePage/ACCESSORIES/3.jpeg" , name:"two-tone line/ Big Logo Mask™(black)", button: "# ", price:"70.000đ",sale:"21.000d"},
+    {img: "../../../assets/homePage/ACCESSORIES/4.jpeg" , name:"5THEWAY® 학교 PEN POUCH™ (Limited)", button: "# ", price:"150.000đ",sale:""},
 ]
 
 const contentAcess = document.getElementById("content-access");
