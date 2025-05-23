@@ -12,37 +12,7 @@
 
   <link rel="stylesheet" href="../../css/subPage1/product detail/checkerboard.css">
   <style>
-  /* Tất cả ảnh lớn và thumbnail cùng khung 300x300 và có border */
-  .img-bordered {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border: 1px solid #cdcdcd;
-    padding: 4px;
-    background-color: #fff;
-    border-radius: 5px;
-  }
-
-  /* Dành cho thumbnail: làm nhỏ lại một chút */
-  .thumb-img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    cursor: pointer;
-  }
-
-  /* Viền nổi bật cho thumbnail đang chọn */
-  .thumb-img.selected {
-    border: 2px solid #cccccc;
-    box-shadow: 0 0 5px rgba(119, 119, 119, 0.6);
-  }
-  #mainImage {
-  height: 400px;
-  object-fit: contain;
-}
-#mainImage, #thumbnailContainer {
-  transition: all 0.3s ease;
-}
+ 
 </style>
   </head>
 
@@ -136,134 +106,73 @@
     <i class="bi bi-arrow-up-circle m-0"></i>
   </button>
   <!-- ******************************************CONTENT*****************************************************-->
-  <main class="product-page">
-    <div class="container py-4">
-        <div class="row">
-          <div class="col-md-6 text-center">
-            <!-- Ảnh lớn -->
-            <img id="mainImage" src="" class="img-fluid img-bordered" alt="Ảnh lớn">
-          
-            <!-- Thumbnails -->
-            <div class="d-flex justify-content-center gap-2 mt-3" id="thumbnailContainer"></div>
+<main class="product-page">
+  <div class="container py-4">
+
+    <!-- Hàng căn giữa toàn bộ -->
+    <div class="row justify-content-center align-items-start">
+
+      <!-- Cột ảnh -->
+      <div class="col-md-4 text-center">
+        <img id="mainImage" src="" class="img-fluid img-bordered" alt="Ảnh lớn">
+        <div class="d-flex justify-content-center gap-2 mt-3" id="thumbnailContainer"></div>
+      </div>
+
+      <!-- Cột thông tin sản phẩm -->
+      <div class="col-md-6">
+        <h4 class="fw-bold">/sketch/ Embroider Traditional Fit Hoodie</h4>
+        <p class="text-danger fw-bold fs-5">333.000đ <del class="text-muted fs-6">790.000đ</del></p>
+        <hr>
+
+        <!-- Màu -->
+        <div class="mb-3">
+          <p class="fw-medium mb-1">Màu:</p>
+          <div class="d-flex flex-wrap gap-2">
+            <input type="radio" class="btn-check" name="color" id="lemon" checked>
+            <label class="btn btn-outline-dark" for="lemon">LEMON</label>
+
+            <input type="radio" class="btn-check" name="color" id="caramel">
+            <label class="btn btn-outline-dark" for="caramel">CARAMEL</label>
           </div>
         </div>
-      
-          <!-- Cột thông tin sản phẩm -->
-          <div class="col-md-6">
-            <h4 class="fw-bold">/sketch/ Embroider Traditional Fit Hoodie</h4>
-            <p class="text-danger fw-bold fs-5">333.000đ <del class="text-muted fs-6">790.000đ</del></p>
-            <hr>
-      
-            <!-- Màu -->
-          <div class="mb-3">
-            <p class="fw-medium mb-1">Màu:</p>
-            <div class="d-flex flex-wrap gap-2">
-                <input type="radio" class="btn-check" name="color" id="lemon" checked>
-                <label class="btn btn-outline-dark" for="lemon">LEMON</label>
+        <hr>
 
-                <input type="radio" class="btn-check" name="color" id="caramel">
-                <label class="btn btn-outline-dark" for="caramel">CARAMEL</label>
-            </div>
-         </div>
-            <hr>
-      
-            <!-- Size -->
-            <div class="mb-3">
-                <p class="fw-medium mb-1">Size:</p>
-                <div class="d-flex gap-2">
-                  <input type="radio" class="btn-check" name="size" id="sizeM" checked>
-                  <label class="btn btn-outline-dark" for="sizeM">M</label>
-      
-                  <input type="radio" class="btn-check" name="size" id="sizeL">
-                  <label class="btn btn-outline-dark" for="sizeL">L</label>
-                </div>
-              </div>
-            <hr>
-      
-            <!-- Số lượng -->
-            <div class="mb-3">
-                <label class="fw-semibold mb-1">Số lượng:</label>
-                <div class="input-group" style="width: 140px;">
-                  <button class="btn btn-outline-secondary" type="button" onclick="decreaseQty()">-</button>
-                  <input type="text" class="form-control text-center" id="quantity" value="1" readonly>
-                  <button class="btn btn-outline-secondary" type="button" onclick="increaseQty()">+</button>
-                </div>
-            </div>
-            <hr>
-      
-            <!-- Nút -->
-            <div class="d-flex gap-2">
-              <button class="btn btn-outline-dark">Thêm giỏ hàng</button>
-              <button class="btn btn-dark">Mua ngay</button>
-            </div>
+        <!-- Size -->
+        <div class="mb-3">
+          <p class="fw-medium mb-1">Size:</p>
+          <div class="d-flex gap-2">
+            <input type="radio" class="btn-check" name="size" id="sizeM" checked>
+            <label class="btn btn-outline-dark" for="sizeM">M</label>
+
+            <input type="radio" class="btn-check" name="size" id="sizeL">
+            <label class="btn btn-outline-dark" for="sizeL">L</label>
           </div>
+        </div>
+        <hr>
+
+        <!-- Số lượng -->
+        <div class="mb-3">
+          <label class="fw-semibold mb-1">Số lượng:</label>
+          <div class="input-group" style="width: 140px;">
+            <button class="btn btn-outline-secondary" type="button" onclick="decreaseQty()">-</button>
+            <input type="text" class="form-control text-center" id="quantity" value="1" readonly>
+            <button class="btn btn-outline-secondary" type="button" onclick="increaseQty()">+</button>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Nút -->
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-dark">Thêm giỏ hàng</button>
+          <button class="btn btn-dark">Mua ngay</button>
         </div>
       </div>
-  </main>
-  <script>
-        // Số lượng
-    function increaseQty() {
-      let qtyInput = document.getElementById("quantity");
-      let value = parseInt(qtyInput.value);
-      qtyInput.value = value + 1;
-    }
-  
-    function decreaseQty() {
-      let qtyInput = document.getElementById("quantity");
-      let value = parseInt(qtyInput.value);
-      if (value > 1) {
-        qtyInput.value = value - 1;
-      }
-    }
 
-            const imageData = {
-      lemon: [
-        '../../../assets/public/jYP98si.png',
-        '../../../assets/thumbnail/Embroider_Traditional_Fit_Hoodie2.png',
-        '../../../assets/thumbnail/Embroider_Traditional_Fit_Hoodie3.png'
-      ],
-      caramel: [
-        '../../../assets/public/JJnYRaO.jpeg',
-        '../../../assets/public/JJnYRaO.jpeg',
-        '../../../assets/public/YcmDCv9.jpeg'
-      ]
-    };
+    </div>
+  </div>
+</main>
 
-    function updateImages(color) {
-      const images = imageData[color];
-      if (!images) return;
-
-      const mainImage = document.getElementById('mainImage');
-      mainImage.src = images[0];
-
-      const container = document.getElementById('thumbnailContainer');
-      container.innerHTML = '';
-
-      images.forEach((src, index) => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.className = 'img-thumbnail thumb-img img-bordered';
-        if (index === 0) img.classList.add('selected');
-
-        img.onclick = () => {
-          mainImage.src = src;
-          document.querySelectorAll('.thumb-img').forEach(t => t.classList.remove('selected'));
-          img.classList.add('selected');
-        };
-
-        container.appendChild(img);
-      });
-    }
-
-    document.querySelectorAll('input[name="color"]').forEach(input => {
-      input.addEventListener('change', function () {
-        updateImages(this.id);
-      });
-    });
-
-    window.onload = () => updateImages('lemon');
-    
-  </script>
+ 
   <!--  ************************************************FOOTER**********************************************8-->
   <footer>
 
@@ -289,5 +198,12 @@
   </footer>
 
 </body>
+
+<script src="../../script/subPage1/product-detail/checkboard.js"></script>
+<script src="../../script/subPage1/product-detail/Embroider_Tradional_Fit_Hoodie_Test.js"></script>
+<script src="../../../bootstrap-5.3.5-dist/js/bootstrap.esm.js"></script>
+<script src="../../../bootstrap-5.3.5-dist/js/bootstrap.js"></script>
+<script src="../../../bootstrap-5.3.5-dist/js/bootstrap.bundle.js"></script>
+
 
 </html>
