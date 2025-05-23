@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết sản phẩm</title>
+  <link rel="stylesheet" href="../../../bootstrap-5.3.5-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../../../bootstrap-5.3.5-dist/css/bootstrap-utilities.css">
+  <link rel="stylesheet" href="../../css/homePage/main.css" />
+  <link rel="stylesheet" href="../../../assets/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="../../css/subPage1/product detail/checkerboard.css">
+  <style>
+  /* Tất cả ảnh lớn và thumbnail cùng khung 300x300 và có border */
+  .img-bordered {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid #cdcdcd;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+
+  /* Dành cho thumbnail: làm nhỏ lại một chút */
+  .thumb-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  /* Viền nổi bật cho thumbnail đang chọn */
+  .thumb-img.selected {
+    border: 2px solid #cccccc;
+    box-shadow: 0 0 5px rgba(119, 119, 119, 0.6);
+  }
+  #mainImage {
+  height: 400px;
+  object-fit: contain;
+}
+#mainImage, #thumbnailContainer {
+  transition: all 0.3s ease;
+}
+</style>
+  </head>
+
+<body>
+  <nav class="navbar navbar-expand bg-white" style="max-height: 85px">
+    <div class="container-xxl">
+      <a class="navbar-brand" href="main.html">
+        <img src="../../../assets/homePage/logo.png" class="img-fluid" alt="logo not found" id="logo" />
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="bar">
+          <li class="nav-item">
+            <a class="nav-link active d-flex flex-column justify-content-center align-content-center"
+              aria-current="page" href="main.html">
+              <i class="bi bi-house-door fs-4 icon"></i>
+              <p>HOME</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active d-flex flex-column justify-content-center align-content-center"
+              aria-current="page" href="error/404-notfound.html">
+              <i class="bi bi-basket fs-4 icon"></i>
+              <p>ALL PRODUCTS</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active d-flex flex-column justify-content-center align-content-center"
+              aria-current="page" href="error/404-notfound.html">
+              <i class="bi bi-cart3 fs-4 icon"></i>
+              <p>CART</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active d-flex flex-column justify-content-center align-content-center"
+              aria-current="page" href="error/404-notfound.html">
+              <i class="bi bi-wallet2 fs-4 icon"></i>
+              <p>WALLET</p>
+            </a>
+          </li>
+
+          <!-- dropdow-menu -->
+          <li class="nav-item dropdown text-center" id="user">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-person-circle icon fs-4" id="userIcon"></i>
+              <p id="usertext">USER</p>
+            </a>
+            <ul class="dropdown-menu" style="margin-top: -11px" id="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="error/404-notfound.html">Thông tin tài khoản</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="error/404-notfound.html">Đăng nhập</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="error/404-notfound.html">Danh sách yêu thích</a>
+              </li>
+              <li style="height: 40px; border-radius: 30px">
+                <a class="dropdown-item d-flex" href="error/404-notfound.html" style>
+                  <i class="bi bi-cart3"></i>
+                  <p>&nbsp Giỏ hàng</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item" title="Source Code" id="github">
+            <a class="nav-link active d-flex flex-column justify-content-center align-content-center"
+              aria-current="page" href="error/404-notfound.html">
+              <i class="bi bi-github fs-1 icon"></i>
+            </a>
+          </li>
+        </ul>
+
+        <div class="search-container d-flex align-items-center" id="search-container">
+          <input type="text" class="form-control" placeholder="Search" />
+          <button class="btn btn-search">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- nut cuon len dau trang -->
+
+  <button id="backToTop" class="btn btn-dark rounded-circle">
+    <i class="bi bi-arrow-up-circle m-0"></i>
+  </button>
+  <!-- ******************************************CONTENT*****************************************************-->
+  <main class="product-page">
+    <div class="container py-4">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <!-- Ảnh lớn -->
+            <img id="mainImage" src="" class="img-fluid img-bordered" alt="Ảnh lớn">
+          
+            <!-- Thumbnails -->
+            <div class="d-flex justify-content-center gap-2 mt-3" id="thumbnailContainer"></div>
+          </div>
+        </div>
+      
+          <!-- Cột thông tin sản phẩm -->
+          <div class="col-md-6">
+            <h4 class="fw-bold">/sketch/ Embroider Traditional Fit Hoodie</h4>
+            <p class="text-danger fw-bold fs-5">333.000đ <del class="text-muted fs-6">790.000đ</del></p>
+            <hr>
+      
+            <!-- Màu -->
+          <div class="mb-3">
+            <p class="fw-medium mb-1">Màu:</p>
+            <div class="d-flex flex-wrap gap-2">
+                <input type="radio" class="btn-check" name="color" id="lemon" checked>
+                <label class="btn btn-outline-dark" for="lemon">LEMON</label>
+
+                <input type="radio" class="btn-check" name="color" id="caramel">
+                <label class="btn btn-outline-dark" for="caramel">CARAMEL</label>
+            </div>
+         </div>
+            <hr>
+      
+            <!-- Size -->
+            <div class="mb-3">
+                <p class="fw-medium mb-1">Size:</p>
+                <div class="d-flex gap-2">
+                  <input type="radio" class="btn-check" name="size" id="sizeM" checked>
+                  <label class="btn btn-outline-dark" for="sizeM">M</label>
+      
+                  <input type="radio" class="btn-check" name="size" id="sizeL">
+                  <label class="btn btn-outline-dark" for="sizeL">L</label>
+                </div>
+              </div>
+            <hr>
+      
+            <!-- Số lượng -->
+            <div class="mb-3">
+                <label class="fw-semibold mb-1">Số lượng:</label>
+                <div class="input-group" style="width: 140px;">
+                  <button class="btn btn-outline-secondary" type="button" onclick="decreaseQty()">-</button>
+                  <input type="text" class="form-control text-center" id="quantity" value="1" readonly>
+                  <button class="btn btn-outline-secondary" type="button" onclick="increaseQty()">+</button>
+                </div>
+            </div>
+            <hr>
+      
+            <!-- Nút -->
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-dark">Thêm giỏ hàng</button>
+              <button class="btn btn-dark">Mua ngay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <script>
+        // Số lượng
+    function increaseQty() {
+      let qtyInput = document.getElementById("quantity");
+      let value = parseInt(qtyInput.value);
+      qtyInput.value = value + 1;
+    }
+  
+    function decreaseQty() {
+      let qtyInput = document.getElementById("quantity");
+      let value = parseInt(qtyInput.value);
+      if (value > 1) {
+        qtyInput.value = value - 1;
+      }
+    }
+
+            const imageData = {
+      lemon: [
+        '../../../assets/public/jYP98si.png',
+        '../../../assets/thumbnail/Embroider_Traditional_Fit_Hoodie2.png',
+        '../../../assets/thumbnail/Embroider_Traditional_Fit_Hoodie3.png'
+      ],
+      caramel: [
+        '../../../assets/public/JJnYRaO.jpeg',
+        '../../../assets/public/JJnYRaO.jpeg',
+        '../../../assets/public/YcmDCv9.jpeg'
+      ]
+    };
+
+    function updateImages(color) {
+      const images = imageData[color];
+      if (!images) return;
+
+      const mainImage = document.getElementById('mainImage');
+      mainImage.src = images[0];
+
+      const container = document.getElementById('thumbnailContainer');
+      container.innerHTML = '';
+
+      images.forEach((src, index) => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.className = 'img-thumbnail thumb-img img-bordered';
+        if (index === 0) img.classList.add('selected');
+
+        img.onclick = () => {
+          mainImage.src = src;
+          document.querySelectorAll('.thumb-img').forEach(t => t.classList.remove('selected'));
+          img.classList.add('selected');
+        };
+
+        container.appendChild(img);
+      });
+    }
+
+    document.querySelectorAll('input[name="color"]').forEach(input => {
+      input.addEventListener('change', function () {
+        updateImages(this.id);
+      });
+    });
+
+    window.onload = () => updateImages('lemon');
+    
+  </script>
+  <!--  ************************************************FOOTER**********************************************8-->
+  <footer>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="info">
+            <p><i class="bi bi-telephone"></i> 083 855 7433</p>
+            <p><i class="bi bi-backpack"></i> Trường Đại học Công Thương TP. Hồ Chí Minh (HUIT)</p>
+            <p><i class="bi bi-building-add"></i> 140 Đ. Lê Trọng Tấn, Tây Thạnh, Tân Phú, Hồ Chí Minh</p>
+            <p><i class="bi bi-envelope-at-fill"></i> <a
+                href="https://www.facebook.com/DhCongThuongHCM/">https://www.facebook.com/DhCongThuongHCM/</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="../../../assets/homePage/logo-fix.png" alt="Logo" style="max-width: 300px; margin-top: 20px;">
+        </div>
+      </div>
+      <div class="coppyright">
+        <p>© 2025 Web bán quần áo - Thiết kế web_Chiều T2</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
