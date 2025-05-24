@@ -13,23 +13,35 @@
     }
 
             const imageData = {
-      white: [
-        '../../../assets/public/2.jpeg'
+      black: [
+        '../../../assets/thumbnail/mask_black.jpeg'
         
       ],
-      bittersweet: [
-        '../../../assets/thumbnail/lettermask_bittersweet.jpeg'
+     
+white :[
+'../../../assets/public/9Zp92gi.jpeg'
+],
+ blue: [
+        '../../../assets/thumbnail/mask_marine-bluejpeg.jpeg'
         
-      
+      ],
+       grey: [
+        '../../../assets/thumbnail/mask_grey.jpeg'
+        
       ],
 
-    orange: [
-        '../../../assets/thumbnail/lettermask_flame.jpeg'
+
+ peach: [
+        '../../../assets/thumbnail/mask-peach-bud.jpeg'
+        
+      ],
+  
+
+     pristin: [
+        '../../../assets/thumbnail/mask-pristin.jpeg'
         
       ]
-
-
-    };
+      };
 
     function updateImages(color) {
       const images = imageData[color];
@@ -63,4 +75,4 @@
       });
     });
 
-    window.onload = () => updateImages('white');
+    window.onload = () => updateImages('black');
