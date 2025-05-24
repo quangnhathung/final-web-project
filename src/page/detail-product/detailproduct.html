@@ -98,96 +98,118 @@
     </div>
   </nav>
 
-  <!-- nut cuon len dau trang -->
-
-  <button id="backToTop" class="btn btn-dark rounded-circle">
-    <i class="bi bi-arrow-up-circle m-0"></i>
-  </button>
+ 
   <!-- ******************************************CONTENT*****************************************************8888-->
   <main class="product-page">
-    <div class="container-fluid ">
-      <div class="row">
-        <div class="col-md-6 text-center">
-          <!-- Ảnh lớn -->
-          <div class="text-center">
-            <img id="mainImage" src="../../../assets/public/0hZe7KE.png" class="img-bordered" alt="Ảnh lớn" style="width: 250px;">
-          </div>
+  <div class="container py-4">
 
-          <!-- Thumbnails -->
-          <div class="mt-3 d-flex justify-content-center gap-2">
-            <img src="../../../assets/public/0hZe7KE.png" class="img-thumbnail thumb-img img-bordered"
-              onclick="changeImage(this)" alt="thumb1" style="width: 100px;">
-           
+    <!-- Hàng căn giữa toàn bộ -->
+    <div class="row justify-content-center align-items-start">
+
+      <!-- Cột ảnh -->
+      <div class="col-md-4 text-center">
+        <img id="mainImage" src="" class="img-fluid img-bordered" alt="Ảnh lớn">
+        <div class="d-flex justify-content-center gap-2 mt-3" id="thumbnailContainer"></div>
+      </div>
+
+      <!-- Cột thông tin sản phẩm -->
+      <div class="col-md-6">
+        <h4 class="fw-bold">SHEEPMAN HAT PANEL 6</h4>
+        <p class="text-danger fw-bold fs-5">450.000đ <del class="text-muted fs-6">590.000đ</del></p>
+        <hr>
+
+        <!-- Màu -->
+        <div class="mb-3">
+          <p class="fw-medium mb-1">Màu:</p>
+          <div class="d-flex flex-wrap gap-2">
+            <input type="radio" class="btn-check" name="color" id="black" checked>
+            <label class="btn btn-outline-dark" for="black">Black</label>
+
+            <input type="radio" class="btn-check" name="color" id="white">
+            <label class="btn btn-outline-dark" for="white">White</label>
           </div>
         </div>
-
-        <!-- Cột thông tin sản phẩm -->
-        <div class="col-md-6">
-          <h4 class="fw-bold">/sheepman/ Sheepman hat 6 panel </h4>
-          <p class="text-danger fw-bold fs-5">195.000<del class="text-muted fs-6 ms-4">600.000đ</del></p>
-          <hr>
-
-          <!-- Màu -->
-          <div class="mb-3">
-            <p class="fw-medium mb-1">Màu:</p>
-            <div class="d-flex flex-wrap gap-2">
-              <input type="radio" class="btn-check" name="color" id="color1" checked>
-              <label class="btn btn-outline-dark" for="color1">BLACK</label>
-
-              <input type="radio" class="btn-check" name="color" id="color2">
-              <label class="btn btn-outline-dark" for="color2">WHITE</label>
-
-
-            </div>
-          </div>
-          <hr>
+        <hr>
 
         
 
-          <!-- Số lượng -->
-          <div class="mb-3">
-            <label class="fw-semibold mb-1">Số lượng:</label>
-            <div class="input-group" style="width: 140px;">
-              <button class="btn btn-outline-secondary" type="button" onclick="decreaseQty()">-</button>
-              <input type="text" class="form-control text-center" id="quantity" value="1" readonly>
-              <button class="btn btn-outline-secondary" type="button" onclick="increaseQty()">+</button>
+        <!-- Số lượng -->
+        <div class="mb-3">
+          <label class="fw-semibold mb-1">Số lượng:</label>
+          <div class="input-group" style="width: 140px;">
+            <button class="btn btn-outline-secondary" type="button" onclick="decreaseQty()">-</button>
+            <input type="text" class="form-control text-center" id="quantity" value="1" readonly>
+            <button class="btn btn-outline-secondary" type="button" onclick="increaseQty()">+</button>
+          </div>
+        </div>
+        <hr>
+
+       
+        <!-- Nút -->
+        <div class="d-flex gap-2">
+            <a href="../error/404-notfound.html" style="text-decoration: none;">
+          <button class="btn btn-outline-dark">Thêm giỏ hàng</button>
+            
+          <button class="btn btn-dark">Mua ngay</button>
+       </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+</main>
+
+  
+ 
+  <!--  ************************************************FOOTER**********************************************8-->
+ <div class="container-fluid bg-white" id="footer">
+      <footer class="container-fluid bg-white">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="info">
+              <i class="bi bi-telephone"></i>
+              <span>&nbsp083 855 7433</span>
+              <br />
+              <br />
+
+              <i class="bi bi-backpack"></i>
+              <span
+                >&nbspTrường Đại học Công Thương TP. Hồ Chí Minh (HUIT)</span
+              >
+              <br />
+              <br />
+
+              <i class="bi bi-building-add"></i>
+              <span
+                >&nbsp140 Đ. Lê Trọng Tấn, Tây Thạnh, Tân Phú, Hồ Chí Minh</span
+              >
+              <br />
+              <br />
+
+              <i class="bi bi-envelope-at-fill"></i>
+              <a href="https://www.facebook.com/DhCongThuongHCM/"
+                >&nbsphttps://www.facebook.com/DhCongThuongHCM/</a
+              >
+              <br />
             </div>
           </div>
-          <hr>
-
-          <!-- Nút -->
-          <div class="d-flex gap-2">
-            <button class="btn btn-outline-dark"> Giỏ hàng </a> </button>
-            <button class="btn btn-dark"> Mua ngay </a></button>
+          <div class="col-md-6">
+            <img
+              src="../../../assets/homePage/logo-fix.png"
+              alt="can not get logo :("
+              style="width: 500px; margin-top: 30px"
+            />
           </div>
         </div>
-      </div>
-    </div>
-  </main>
-  <!--  ************************************************FOOTER**********************************************8-->
-  <footer>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="info">
-            <p><i class="bi bi-telephone"></i> 083 855 7433</p>
-            <p><i class="bi bi-backpack"></i> Trường Đại học Công Thương TP. Hồ Chí Minh (HUIT)</p>
-            <p><i class="bi bi-building-add"></i> 140 Đ. Lê Trọng Tấn, Tây Thạnh, Tân Phú, Hồ Chí Minh</p>
-            <p><i class="bi bi-envelope-at-fill"></i> <a
-                href="https://www.facebook.com/DhCongThuongHCM/">https://www.facebook.com/DhCongThuongHCM/</a></p>
-          </div>
-        </div>
-        <div class="col-md-6 text-center">
-          <img src="../../../assets/homePage/logo-fix.png" alt="Logo" style="max-width: 300px; margin-top: 20px;">
-        </div>
-      </div>
+      </footer>
       <div class="coppyright">
-        <p>© 2025 Web bán quần áo - Thiết kế web_Chiều T2</p>
+        <span>© 2025 Web bán quần áo - Thiết kế web_Chiều T2</span>
       </div>
     </div>
-  </footer>
 <script src="../../script/subPage1/product-detail/checkboard.js"></script>
+<script src="../../script/subPage1/product-detail/panel-hat.js"></script>
 <script src="../../../bootstrap-5.3.5-dist/js/bootstrap.esm.js"></script>
 <script src="../../../bootstrap-5.3.5-dist/js/bootstrap.js"></script>
 <script src="../../../bootstrap-5.3.5-dist/js/bootstrap.bundle.js"></script>

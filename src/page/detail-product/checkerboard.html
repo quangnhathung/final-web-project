@@ -98,11 +98,7 @@
     </div>
   </nav>
 
-  <!-- nut cuon len dau trang -->
-
-  <button id="backToTop" class="btn btn-dark rounded-circle">
-    <i class="bi bi-arrow-up-circle m-0"></i>
-  </button>
+  
   <!-- ******************************************CONTENT*****************************************************-->
   <main class="product-page">
     <div class="container-fluid ">
@@ -171,15 +167,19 @@
           </div>
           <hr>
 
-          <!-- Nút -->
-          <div class="d-flex gap-2">
-            <button class="btn btn-outline-dark"> Giỏ hàng </a> </button>
-            <button class="btn btn-dark"> Mua ngay </a></button>
-          </div>
+        <!-- Nút -->
+        <div class="d-flex gap-2">
+            <a href="../error/404-notfound.html" style="text-decoration: none;">
+          <button class="btn btn-outline-dark">Thêm giỏ hàng</button>
+            
+          <button class="btn btn-dark">Mua ngay</button>
+       </a>
         </div>
       </div>
+
     </div>
-  </main>
+  </div>
+</main>
 
 
 
@@ -188,29 +188,51 @@
 
 
   <!--  ************************************************FOOTER**********************************************8-->
-  <footer>
+  <div class="container-fluid bg-white" id="footer">
+      <footer class="container-fluid bg-white">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="info">
+              <i class="bi bi-telephone"></i>
+              <span>&nbsp083 855 7433</span>
+              <br />
+              <br />
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="info">
-            <p><i class="bi bi-telephone"></i> 083 855 7433</p>
-            <p><i class="bi bi-backpack"></i> Trường Đại học Công Thương TP. Hồ Chí Minh (HUIT)</p>
-            <p><i class="bi bi-building-add"></i> 140 Đ. Lê Trọng Tấn, Tây Thạnh, Tân Phú, Hồ Chí Minh</p>
-            <p><i class="bi bi-envelope-at-fill"></i> <a
-                href="https://www.facebook.com/DhCongThuongHCM/">https://www.facebook.com/DhCongThuongHCM/</a></p>
+              <i class="bi bi-backpack"></i>
+              <span
+                >&nbspTrường Đại học Công Thương TP. Hồ Chí Minh (HUIT)</span
+              >
+              <br />
+              <br />
+
+              <i class="bi bi-building-add"></i>
+              <span
+                >&nbsp140 Đ. Lê Trọng Tấn, Tây Thạnh, Tân Phú, Hồ Chí Minh</span
+              >
+              <br />
+              <br />
+
+              <i class="bi bi-envelope-at-fill"></i>
+              <a href="https://www.facebook.com/DhCongThuongHCM/"
+                >&nbsphttps://www.facebook.com/DhCongThuongHCM/</a
+              >
+              <br />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="../../../assets/homePage/logo-fix.png"
+              alt="can not get logo :("
+              style="width: 500px; margin-top: 30px"
+            />
           </div>
         </div>
-        <div class="col-md-6 text-center">
-          <img src="../../../assets/homePage/logo-fix.png" alt="Logo" style="max-width: 300px; margin-top: 20px;">
-        </div>
-      </div>
+      </footer>
       <div class="coppyright">
-        <p>© 2025 Web bán quần áo - Thiết kế web_Chiều T2</p>
+        <span>© 2025 Web bán quần áo - Thiết kế web_Chiều T2</span>
       </div>
     </div>
-  </footer>
-
+    
 
 <script src="../../script/subPage1/product-detail/checkboard.js"></script>
 <script src="../../../bootstrap-5.3.5-dist/js/bootstrap.esm.js"></script>
