@@ -21,14 +21,14 @@ Tops.forEach(product => {
                 <h5 class="card-title">${product.name}</h5>
                 <p class="card-text text-danger fs-4 fw-bold">${product.price} <s style="font-size: 15px;color:rgb(127, 130, 130);">${product.sale}</s></p>
                 <input hidden class="cart-toggle" id="cart-toggle" type="checkbox" />
-                <label class="cart-button text-center">
-                    <a href="#" style = "color:white;text-decoration: none;">
+                <label onclick="showToast()" class="cart-button text-center">
+                    <div style = "color:white;text-decoration: none;">
                         <span class="cart-icon">
                             <i class="bi bi-cart-plus" style="font-size: 24px;"></i>
                         </span>
                         Thêm vào giỏ hàng
                         <div class="progress-bar"></div>
-                    </a>
+                    </div>
                 </label>
 
                 <a href="${product.button}" class="btn btn-outline-dark rounded-4 fs-4 mt-auto"><i class="bi bi-basket3"></i>Mua ngay</a>

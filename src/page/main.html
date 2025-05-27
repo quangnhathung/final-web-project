@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="../css/homePage/tops.css" />
     <link rel="stylesheet" href="../../assets/bootstrap-icons.css" />
     <link rel="stylesheet" href="../css/homePage/contact.css" />
+    <link rel="stylesheet" href="../css/homePage/toast.css">
   </head>
   <body>
     <!-- -------------------------navBar------------------------------------ -->
@@ -462,6 +463,16 @@
       </div>
     </div>
 
+    <!-- ----------Toasts for add to cart----------- -->
+    <div class="toast-container position-fixed">
+      <div id="add-success" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+          <i class="bi bi-bag-check"></i>
+          <p>Đã thêm vào giỏ hàng!</p>
+        </div>
+      </div>
+    </div>
+
     <!--------------------------footer----------------------------------->
     <div class="container-fluid bg-white" id="footer">
       <footer class="container-fluid bg-white">
@@ -507,7 +518,7 @@
         <span>© 2025 Web bán quần áo - Thiết kế web_Chiều T2</span>
       </div>
     </div>
-
+    <script src="../script/homePage/handleToast.js"></script>
     <script src="../script/homePage/LoadBottoms.js"></script>
     <script src="../script/homePage/LoadTops.js"></script>
     <script src="../script/homePage//loadACCESSORIES.js"></script>
