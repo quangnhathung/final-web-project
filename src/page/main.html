@@ -8,14 +8,25 @@
       rel="stylesheet"
       href="../../bootstrap-5.3.5-dist/css/bootstrap.css"
     />
+
+    <link
+      rel="icon"
+      href="../../assets/favicon/favicon(base).ico"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
       href="../../bootstrap-5.3.5-dist/css/bootstrap-utilities.css"
     />
-    <link rel="stylesheet" href="../css/homePage/main.css" />
+    <link rel="stylesheet" href="../css/homePage/moreContent.css" />
+    <link rel="stylesheet" href="../css/homePage/default.css" />
+    <link rel="stylesheet" href="../css/homePage/banner.css" />
+    <link rel="stylesheet" href="../css/homePage/tops.css" />
     <link rel="stylesheet" href="../../assets/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/homePage/contact.css" />
   </head>
   <body>
+    <!-- -------------------------navBar------------------------------------ -->
     <nav class="navbar navbar-expand bg-white" style="max-height: 75px">
       <div class="container-xxl">
         <a class="navbar-brand" href="main.html">
@@ -55,7 +66,7 @@
               <a
                 class="nav-link active d-flex flex-column justify-content-center align-content-center"
                 aria-current="page"
-                href="error/404-notfound.html"
+                href="Cart_user/cart.html"
               >
                 <i class="bi bi-cart3 fs-4 icon"></i>
                 <p>CART</p>
@@ -66,7 +77,7 @@
               <a
                 class="nav-link active d-flex flex-column justify-content-center align-content-center"
                 aria-current="page"
-                href="error/404-notfound.html"
+                href="https://www.paypal.com/signin?locale.x=vi_VN"
               >
                 <i class="bi bi-wallet2 fs-4 icon"></i>
                 <p>WALLET</p>
@@ -91,24 +102,24 @@
                 id="dropdown-menu"
               >
                 <li>
-                  <a class="dropdown-item" href="error/404-notfound.html"
+                  <a class="dropdown-item" href="User-profile/profile.html"
                     >Thông tin tài khoản</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="error/404-notfound.html"
+                  <a class="dropdown-item" href="Card_user/cart.html"
                     >Đăng nhập</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="error/404-notfound.html"
+                  <a class="dropdown-item" href="User-profile/profile.html"
                     >Danh sách yêu thích</a
                   >
                 </li>
                 <li style="height: 40px; border-radius: 30px">
                   <a
                     class="dropdown-item d-flex"
-                    href="error/404-notfound.html"
+                    href="Cart_user/cart.html"
                     style
                   >
                     <i class="bi bi-cart3"></i>
@@ -122,7 +133,7 @@
               <a
                 class="nav-link active d-flex flex-column justify-content-center align-content-center"
                 aria-current="page"
-                href="error/404-notfound.html"
+                href="https://github.com/quangnhathung/final-web-project"
               >
                 <i class="bi bi-github fs-1 icon"></i>
               </a>
@@ -143,16 +154,315 @@
     </nav>
 
     <!-- nut cuon len dau trang -->
+
     <button id="backToTop" class="btn btn-dark rounded-circle">
       <i class="bi bi-arrow-up-circle m-0"></i>
     </button>
-    <!-- ------------------------------------------------------------------- -->
 
+    <!-- -----------------------------main----------------------------------- -->
 
+    <!-- ---------banner----------------- -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img
+            src="../../assets/homePage/banner/crop-file.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img
+            src="../../assets/homePage/banner/artboard_4_2x-100.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img
+            src="../../assets/homePage/banner/1366x532_280325.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img
+            src="../../assets/homePage/banner/1136x532_2x-100_180425.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-    
+    <!-- -------------------------img decor--------------------- -->
+    <div class="container mt-3">
+      <img
+        src="../../assets/homePage/decor.png"
+        class="img-fluid"
+        alt="not-found"
+      />
+    </div>
+    <!-- --------------------top----------------->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12">
+          <h2 style="font-weight: bolder">TOPS</h2>
+        </div>
+      </div>
+      <div
+        class="row"
+        id="content-top"
+        style="
+          background-color: rgb(236, 229, 229);
+          padding: 2px;
+          border-radius: 10px;
+        "
+      >
+        <a href="#" class="col-md-4 col-lg-6" id="main-top">
+          <img
+            src="../../assets/homePage/TOPS/main.jpg"
+            class="img-fluid img-top"
+            alt="not-found"
+            style="width: 100%"
+          />
+          <div class="overlay"></div>
+          <div class="wrapper">
+            <div>
+              <h4>LED SIGN /teddy bear/ NEW TEE™</h4>
+              <s class="fs-5">390.000đ</s>
+              <p style="margin-top: -20px; font-size: 25px; color: red">
+                Ưu đãi: 99.000đ
+              </p>
+            </div>
+            <button
+              onclick="window.location.href='https://www.resizepixel.com/download'"
+              type="button"
+              class="btn btn-outline-light"
+            >
+              Mua ngay
+            </button>
+          </div>
+        </a>
+      </div>
 
-    <!-- ------------------------footer--------------------------------- -->
+      <div class="row">
+        <a class="col-12 text-center more" href="#"
+          >Xem thêm&nbsp
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-right"
+            viewBox="0 0 20 20"
+            id="next-arrow"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- -------------------ACCESSORIES------------------------ -->
+    <div
+      class="wrap"
+      style="
+        padding-bottom: 50px;
+        padding-top: 50px;
+        background-color: rgb(255, 255, 255);
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 style="font-weight: bolder">ACCESSORIES</h2>
+          </div>
+        </div>
+        <div
+          class="row"
+          id="content-access"
+          style="
+            background-color: rgba(0, 0, 0, 0.068);
+            padding: 2px;
+            border-radius: 10px;
+          "
+        >
+          <a href="#" class="col-md-4 col-lg-6" id="main-top">
+            <img
+              src="../../assets/homePage/ACCESSORIES/main.jpg"
+              class="img-fluid img-top"
+              alt="not-found"
+              style="width: 100%"
+            />
+            <div class="overlay"></div>
+            <div class="wrapper">
+              <div>
+                <h4>/PUBLIC ICON/ LONG WALLET</h4>
+                <s class="fs-5">350.000đ</s>
+                <p style="margin-top: -20px; font-size: 25px; color: red">
+                  Ưu đãi: 143.000đ
+                </p>
+              </div>
+              <button
+                onclick="window.location.href='https://www.resizepixel.com/download'"
+                type="button"
+                class="btn btn-outline-light"
+              >
+                Mua ngay
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <a class="col-12 text-center more" href="#"
+          >Xem thêm&nbsp
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-right"
+            viewBox="0 0 20 20"
+            id="next-arrow"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!---------------------------bottom---------------------------------------->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12">
+          <h2 style="font-weight: bolder">BOTTOMS</h2>
+        </div>
+      </div>
+      <div
+        class="row"
+        id="content-bottom"
+        style="
+          background-color: rgb(243, 243, 243);
+          padding: 2px;
+          border-radius: 10px;
+        "
+      >
+        <a href="#" class="col-md-4 col-lg-6" id="main-top">
+          <img
+            src="../../assets/homePage/Bottoms/main.png"
+            class="img-fluid img-top"
+            alt="not-found"
+            style="width: 100%"
+          />
+          <div class="overlay"></div>
+          <div class="wrapper">
+            <div>
+              <h4>HIP BRIEF UNDERWEAR</h4>
+              <s class="fs-5">390.000đ</s>
+              <p style="margin-top: -20px; font-size: 25px; color: red">
+                Ưu đãi: 99.000đ
+              </p>
+            </div>
+            <button
+              onclick="window.location.href='https://www.resizepixel.com/download'"
+              type="button"
+              class="btn btn-outline-light"
+            >
+              Mua ngay
+            </button>
+          </div>
+        </a>
+      </div>
+
+      <div class="row">
+        <a class="col-12 text-center more" href="#"
+          >Xem thêm&nbsp
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-right"
+            viewBox="0 0 20 20"
+            id="next-arrow"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!------------------------------CONTACT-------------------------------->
+    <div class="container-fluid bg-white my-3">
+      <div class="row">
+        <div class="col-lg-6">
+          <img
+            src="../../assets/homePage/Thu_vien_HUIT-568x426.jpg"
+            alt="not-found"
+            style="width: 100%; height: 400px"
+          />
+        </div>
+        <div class="col-lg-6">
+          <div class="newsletter-box">
+            <h2>ĐĂNG KÝ NHẬN BẢN TIN</h2>
+            <p>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</p>
+            <form>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Nhập email của bạn"
+                  required
+                />
+              </div>
+              <button
+                onclick="window.location.href='https://www.resizepixel.com/download'"
+                type="reset"
+                class="btn btn-dark w-100"
+              >
+                ĐĂNG KÝ
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------footer----------------------------------->
     <div class="container-fluid bg-white" id="footer">
       <footer class="container-fluid bg-white">
         <div class="row">
@@ -198,6 +508,9 @@
       </div>
     </div>
 
+    <script src="../script/homePage/LoadBottoms.js"></script>
+    <script src="../script/homePage/LoadTops.js"></script>
+    <script src="../script/homePage//loadACCESSORIES.js"></script>
     <script src="../script/homePage/main.js"></script>
     <script src="../../bootstrap-5.3.5-dist/js/bootstrap.esm.js"></script>
     <script src="../../bootstrap-5.3.5-dist/js/bootstrap.js"></script>
