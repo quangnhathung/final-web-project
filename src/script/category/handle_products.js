@@ -41,9 +41,9 @@ const listproduct = [
   },
 
   {
-    link_anh: "../../../assets/public/742e51eb86d04540b64d0b06df8a8c76.jpg",
+    link_anh: "../../../assets/public/main1.jpg",
     ten_sp: "LED SIGN /teddy bear/ NEW TEE™",
-    button: "../detail-product/",
+    button: "#",
     price: "390.000đ",
     sale: "99.000đ",
     loai_sp: "Áo",
@@ -52,7 +52,7 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/0823f2bf88204b8d829c6c67721a0922.jpg",
     ten_sp: "/public icon/ ZIGZAG HOODED KHAKI JACKET™",
-    button: "../detail-product/",
+    button: "../detail-product/ziczac_hoodie.html",
     price: "590.000đ",
     sale: "375.000đ",
     loai_sp: "Áo",
@@ -61,7 +61,7 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/apFsKUV.jpeg",
     ten_sp: "/milky way/ Vertical Drop Shoulder Tee™",
-    button: "../detail-product/",
+    button: "../detail-product/vertical_tee.html",
     price: "",
     sale: "370.000đ",
     loai_sp: "Áo",
@@ -69,14 +69,14 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/B4cFp4A.jpeg",
     ten_sp: "/solid/ Rocket Backpack",
-    button: "../detail-product/",
+    button: "../detail-product/rocket-backpack.html",
     price: "550.000đ",
     sale: "201.000đ",
     loai_sp: "Phụ kiện",
   },
 
   {
-    link_anh: "../../../assets/public/BhUxlPz.png",
+    link_anh: "../../../assets/public/1.png",
     ten_sp: "BlackSheeps Mini Shoulder Bag",
     button: "../detail-product/minibag.html",
     price: "350.000đ",
@@ -87,7 +87,7 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/eGW9p85.jpeg",
     ten_sp: "5THEWAY RELAXED TAPERED PANTS",
-    button: "../detail-product/",
+    button: "../detail-product/relax_pants.html",
     price: "490.000đ",
     sale: "181.000đ",
     loai_sp: "Quần",
@@ -95,7 +95,7 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/F1Tqkq3.png",
     ten_sp: "SHEEPSMAN FACE MASK",
-    button: "../detail-product/",
+    button: "../detail-product/sheepsman_face_mask.html",
     price: "70.000đ",
     sale: "21.000đ",
     loai_sp: "Phụ kiện",
@@ -113,7 +113,7 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/H6HJdSJ.jpeg",
     ten_sp: "5THEWAY® 학교 VARSITY TONE ROCKET BACKPACK™",
-    button: "../detail-product/",
+    button: "../detail-product/varsity_backpack.html",
     price: "550.000đ",
     sale: "471.000đ",
     loai_sp: "Phụ kiện",
@@ -121,7 +121,7 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/h60x6UW.png",
     ten_sp: "/floral youth/ KAKI JACKET",
-    button: "../detail-product/",
+    button: "#",
     price: "890.000đ",
     sale: "233.000đ",
     loai_sp: "Áo",
@@ -129,14 +129,14 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/hwTs3US.jpeg",
     ten_sp: "/two-tone line/ Big Logo Mask",
-    button: "../detail-product/",
+    button: "#",
     price: "70.000đ",
     sale: "21.000đ",
     loai_sp: "Phụ kiện",
   },
 
   {
-    link_anh: "../../../assets/public/JJnYRaO.jpeg",
+    link_anh: "../../../assets/public/2.jpeg",
     ten_sp: "/two-tone line/ Letter Mask",
     button: "../detail-product/letter-mask.html",
     price: "70.000đ",
@@ -155,14 +155,14 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/kKXp1W9.jpeg",
     ten_sp: "SHEEPSMAN FACE KAKI JACKET",
-    button: "../detail-product/",
+    button: "#",
     price: "650.000đ",
     sale: "251.000đ",
     loai_sp: "Áo",
   },
 
   {
-    link_anh: "../../../assets/public/oFSNtju.jpeg",
+    link_anh: "../../../assets/public/4.jpeg",
     ten_sp: "5THEWAY® 학교 PEN POUCH™",
     button: "../detail-product/pen-pouch.html",
     price: "",
@@ -171,17 +171,17 @@ const listproduct = [
   },
 
   {
-    link_anh: "../../../assets/public/pBxH1Cq.jpeg",
+    link_anh: "../../../assets/public/main.jpg",
     ten_sp: "/PUBLIC ICON/ LONG WALLET",
-    button: "../detail-product/",
+    button: "#",
     price: "350.000đ",
     sale: "143.000đ",
     loai_sp: "Phụ kiện",
   },
   {
-    link_anh: "../../../assets/public/PpborwX.jpeg",
+    link_anh: "../../../assets/public/3.jpeg",
     ten_sp: "/solid/ Big Logo Mask",
-    button: "../detail-product/",
+    button: "#",
     price: "70.000đ",
     sale: "21.000đ",
     loai_sp: "Phụ kiện",
@@ -189,7 +189,7 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/pUcOAao.png",
     ten_sp: "BLACKSHEEPS POLO LS TEE",
-    button: "../detail-product/",
+    button: "#",
     price: "430.000đ",
     sale: "99.000đ",
     loai_sp: "Áo",
@@ -197,7 +197,7 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/RVXdJCd.png",
     ten_sp: "SPACE JAM SS TEE",
-    button: "../detail-product/",
+    button: "#",
     price: "390.000đ",
     sale: "99.000đ",
     loai_sp: "Áo",
@@ -205,7 +205,7 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/tbjmHcb.png",
     ten_sp: "/teddy bear/ CROP TEE",
-    button: "../detail-product/",
+    button: "#",
     price: "270.000đ",
     sale: "99.000đ",
     loai_sp: "Áo",
@@ -213,7 +213,7 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/UOhS20W.png",
     ten_sp: "/plastic/ ROCKET BACKPACK",
-    button: "../detail-product/",
+    button: "#",
     price: "610.000đ",
     sale: "201.000đ",
     loai_sp: "Phụ kiện",
@@ -221,7 +221,7 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/UZ4JuK5.png",
     ten_sp: "SHEEPSMAN FACE HOODIE",
-    button: "../detail-product/",
+    button: "#",
     price: "650.000đ",
     sale: "175.000đ",
     loai_sp: "Áo",
@@ -229,7 +229,7 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/Vj3rWMX.jpeg",
     ten_sp: "/stroke/ BIG LOGO FLANNEL SHIRT™",
-    button: "../detail-product/",
+    button: "#",
     price: "470.000đ",
     sale: "175.000đ",
     loai_sp: "Áo",
@@ -237,7 +237,7 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/vqMnJ23.png",
     ten_sp: "/YILAC/ SQUARE LONG SLEEVE TEE",
-    button: "../detail-product/",
+    button: "#",
     price: "450.000đ",
     sale: "99.000đ",
     loai_sp: "Áo",
@@ -245,7 +245,7 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/XsIqeyw.jpeg",
     ten_sp: "/solid/ Letter Logo Mask",
-    button: "../detail-product/",
+    button: "#",
     price: "70.000đ",
     sale: "21.000đ",
     loai_sp: "Phụ kiện",
@@ -253,7 +253,7 @@ const listproduct = [
   {
     link_anh: "../../../assets/public/YcmDCv9.jpeg",
     ten_sp: "/over/ Corduroy Dad Cap",
-    button: "../detail-product/",
+    button: "#",
     price: "390.000đ",
     sale: "151.000đ",
     loai_sp: "Phụ kiện",
@@ -321,6 +321,7 @@ function Tao_The_San_Pham(link_anh, ten_sp, button, price, sale) {
   product.appendChild(div);
 }
 
+// Hàm xử lý lọc sản phẩm
 const select = document.getElementById("select-category");
 
 select.onchange = function () {
