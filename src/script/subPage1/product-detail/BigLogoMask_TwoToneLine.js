@@ -13,14 +13,24 @@ function decreaseQty() {
 }
 
 const imageData = {
-    hotpink: [
-        '../../../assets/thumbnail/dadcap_pink1.png',
-        '../../../assets/thumbnail/dadcap_pink2.png'
+    while: [
+        '../../../assets/public/hwTs3US.jpeg'
     ],
-     
-    purple: [
-        '../../../assets/public/YcmDCv9.jpeg',
-        '../../../assets/thumbnail/dadcap_purple.png'
+
+    reelwater: [
+        '../../../assets/thumbnail/biglogo_reelwater.jpeg'
+    ],
+
+    black: [
+        '../../../assets/thumbnail/biglogo_black.jpeg'
+    ],
+
+    greige: [
+        '../../../assets/thumbnail/biglogo_greige.jpeg'
+    ],
+
+    neutralgray: [
+        '../../../assets/thumbnail/biglogo_neutralgray.jpeg'
     ],
 };
 
@@ -56,4 +66,4 @@ document.querySelectorAll('input[name="color"]').forEach(input => {
       });
 });
 
-window.onload = () => updateImages('hotpink');
+window.onload = () => updateImages('while');

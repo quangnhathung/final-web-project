@@ -13,14 +13,20 @@ function decreaseQty() {
 }
 
 const imageData = {
-    hotpink: [
-        '../../../assets/thumbnail/dadcap_pink1.png',
-        '../../../assets/thumbnail/dadcap_pink2.png'
+    lemon: [
+        '../../../assets/public/jYP98si.png',
+        '../../../assets/thumbnail/Embroider_Traditional_Fit_Hoodie2.png',
+        '../../../assets/thumbnail/Embroider_Traditional_Fit_Hoodie3.png',
+        '../../../assets/thumbnail/Embroider_Traditional_Fit_Hoodie4.png',
+        '../../../assets/thumbnail/Embroider_Traditional_Fit_Hoodie5.png'
     ],
      
-    purple: [
-        '../../../assets/public/YcmDCv9.jpeg',
-        '../../../assets/thumbnail/dadcap_purple.png'
+    caramel: [
+        '../../../assets/thumbnail/hoodie_caramel_1.png',
+        '../../../assets/thumbnail/hoodie_caramel_2.png',
+        '../../../assets/thumbnail/hoodie_caramel_3.png',
+        '../../../assets/thumbnail/hoodie_caramel_4.png',
+        '../../../assets/thumbnail/hoodie_caramel_5.png'
     ],
 };
 
@@ -56,4 +62,4 @@ document.querySelectorAll('input[name="color"]').forEach(input => {
       });
 });
 
-window.onload = () => updateImages('hotpink');
+window.onload = () => updateImages('lemon');

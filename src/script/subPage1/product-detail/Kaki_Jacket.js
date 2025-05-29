@@ -13,14 +13,9 @@ function decreaseQty() {
 }
 
 const imageData = {
-    hotpink: [
-        '../../../assets/thumbnail/dadcap_pink1.png',
-        '../../../assets/thumbnail/dadcap_pink2.png'
-    ],
-     
-    purple: [
-        '../../../assets/public/YcmDCv9.jpeg',
-        '../../../assets/thumbnail/dadcap_purple.png'
+    pink: [
+        '../../../assets/public/h60x6UW.png',
+        '../../../assets/thumbnail/Kaki_Jacket_pink.png'
     ],
 };
 
@@ -56,4 +51,4 @@ document.querySelectorAll('input[name="color"]').forEach(input => {
       });
 });
 
-window.onload = () => updateImages('hotpink');
+window.onload = () => updateImages('pink');
