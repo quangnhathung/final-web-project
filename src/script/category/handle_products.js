@@ -308,14 +308,14 @@ function Tao_The_San_Pham(link_anh, ten_sp, button, price, sale) {
                 <div style="display:flex; flex-direction: column; justify-content: flex-end; flex:1;" >
                     <p class="card-text text-danger fs-4 fw-bold">${sale} <s style="font-size: 15px;color:rgb(127, 130, 130);">${price}</s></p>
 
-                    <label class="cart-button text-center" style="padding:8px; margin-left:2.5%;margin-bottom:-3px;width:95%"  >
-                        <a href="#" style = "color:white;text-decoration: none;">
-                            <span class="cart-icon">
-                                <i class="bi bi-cart-plus" style="font-size: 24px;"></i>
-                            </span>
-                            Thêm vào giỏ hàng
-                            <div class="progress-bar"></div>
-                        </a>
+                    <label onclick="showToast()" class="cart-button text-center">
+                      <div style = "color:white;text-decoration: none;">
+                          <span class="cart-icon">
+                              <i class="bi bi-cart-plus" style="font-size: 24px;"></i>
+                          </span>
+                          Thêm vào giỏ hàng
+                          <div class="progress-bar"></div>
+                      </div>
                     </label>
 
                     <a href="${button}"  class="btn btn-outline-dark rounded-4 fs-4"><i class="bi bi-basket3"></i>Mua ngay</a>

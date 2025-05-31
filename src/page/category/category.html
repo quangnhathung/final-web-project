@@ -15,7 +15,7 @@
     
     <link
       rel="icon"
-      href="../../assets/favicon/favicon(base).ico"
+      href="../../../assets/favicon/favicon(base).ico"
       type="image/x-icon"
     />
 
@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../../../assets/bootstrap-icons.css" />
 
     <link rel="stylesheet" href="../../css/category/category.css" />
+    <link rel="stylesheet" href="../../css/homePage/toast.css" />
   </head>
 
   <body>
@@ -66,7 +67,7 @@
               <a
                 class="nav-link active d-flex flex-column justify-content-center align-content-center"
                 aria-current="page"
-                href="../Cart_user/cart.html"
+                href="../user/cart.html"
               >
                 <i class="bi bi-cart3 fs-4 icon"></i>
                 <p>CART</p>
@@ -107,7 +108,7 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="../Card_user/cart.html"
+                  <a class="dropdown-item" href="../user/login.html"
                     >Đăng nhập</a
                   >
                 </li>
@@ -119,7 +120,7 @@
                 <li style="height: 40px; border-radius: 30px">
                   <a
                     class="dropdown-item d-flex"
-                    href="../Cart_user/cart.html"
+                    href="../user/cart.html"
                     style
                   >
                     <i class="bi bi-cart3"></i>
@@ -195,6 +196,22 @@
       </div>
     </div>
 
+    <!-- ----------Toasts for add to cart----------- -->
+    <div class="toast-container position-fixed">
+      <div
+        id="add-success"
+        class="toast hide"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-body">
+          <i class="bi bi-bag-check"></i>
+          <p>Đã thêm vào giỏ hàng!</p>
+        </div>
+      </div>
+    </div>
+
     <!-- ------------------------footer--------------------------------- -->
     <div class="container-fluid bg-white" id="footer">
       <footer class="container-fluid bg-white">
@@ -243,10 +260,11 @@
 
     <script src="../../script/category/handle_products.js"></script>
     <script src="../../script/category/back-to-top-button.js"></script>
+    <script src="../../script/homePage/main.js"></script>
+    <script src="../../script/homePage/handleToast.js"></script>
 
-    <script src="../script/homePage/main.js"></script>
-    <script src="../../bootstrap-5.3.5-dist/js/bootstrap.esm.js"></script>
-    <script src="../../bootstrap-5.3.5-dist/js/bootstrap.js"></script>
-    <script src="../../bootstrap-5.3.5-dist/js/bootstrap.bundle.js"></script>
+    <script src="../../../bootstrap-5.3.5-dist/js/bootstrap.esm.js"></script>
+    <script src="../../../bootstrap-5.3.5-dist/js/bootstrap.js"></script>
+    <script src="../../../bootstrap-5.3.5-dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
