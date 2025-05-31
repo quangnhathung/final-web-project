@@ -1,18 +1,41 @@
 const acess = [
-    {img: "../../../assets/homePage/ACCESSORIES/1.png" , name:"BlackSheeps Mini Shoulder Bag™", button: "# ", price:"355.000đ",sale:"195.000d"},
-    {img: "../../../assets/homePage/ACCESSORIES/2.jpeg" , name:"/two-tone line/ Big Logo Mask™", button: "# ", price:"70.000đ",sale:"21.000d"},
-    {img: "../../../assets/homePage/ACCESSORIES/3.jpeg" , name:"two-tone line/ Big Logo Mask™(black)", button: "# ", price:"70.000đ",sale:"21.000d"},
-    {img: "../../../assets/homePage/ACCESSORIES/4.jpeg" , name:"5THEWAY® 학교 PEN POUCH™ (Limited)", button: "# ", price:"150.000đ",sale:""},
-]
+  {
+    img: "../../../assets/homePage/ACCESSORIES/1.png",
+    name: "BlackSheeps Mini Shoulder Bag™",
+    button: "detail-product/black-sheep.html ",
+    price: "355.000đ",
+    sale: "195.000d",
+  },
+  {
+    img: "../../../assets/homePage/ACCESSORIES/2.jpeg",
+    name: "/two-tone line/ Big Logo Mask™",
+    button: "detail-product/BigLogoMask_TwoToneLine.html",
+    price: "70.000đ",
+    sale: "21.000d",
+  },
+  {
+    img: "../../../assets/homePage/ACCESSORIES/3.jpeg",
+    name: "two-tone line/ Big Logo Mask™(black)",
+    button: "detail-product/BIg_mask(2).html ",
+    price: "70.000đ",
+    sale: "21.000d",
+  },
+  {
+    img: "../../../assets/homePage/ACCESSORIES/4.jpeg",
+    name: "5THEWAY® 학교 PEN POUCH™ (Limited)",
+    button: "detail-product/pen-pouch.html ",
+    price: "150.000đ",
+    sale: "",
+  },
+];
 
 const contentAcess = document.getElementById("content-access");
 
+acess.forEach((product) => {
+  const col = document.createElement("content-access");
+  col.className = "col-md-4  col-lg-3 pb-1 gx-2 gy-1 item-top";
 
-acess.forEach(product => {
-    const col = document.createElement("content-access");
-    col.className = "col-md-4  col-lg-3 pb-1 gx-2 gy-1 item-top";
-
- col.innerHTML = `
+  col.innerHTML = `
         <div class="card h-100">
             <img src="${product.img}" class="card-img-top" alt="${product.name}">
             <div class="card-body d-flex flex-column">
@@ -34,5 +57,5 @@ acess.forEach(product => {
         </div>
     `;
 
-    contentAcess.appendChild(col);
+  contentAcess.appendChild(col);
 });
