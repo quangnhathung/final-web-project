@@ -1,78 +1,61 @@
- function increaseQty() {
-      let qtyInput = document.getElementById("quantity");
-      let value = parseInt(qtyInput.value);
-      qtyInput.value = value + 1;
-    }
-  
-    function decreaseQty() {
-      let qtyInput = document.getElementById("quantity");
-      let value = parseInt(qtyInput.value);
-      if (value > 1) {
-        qtyInput.value = value - 1;
-      }
-    }
+function increaseQty() {
+  let qtyInput = document.getElementById("quantity");
+  let value = parseInt(qtyInput.value);
+  qtyInput.value = value + 1;
+}
 
-            const imageData = {
-      black: [
-        '../../../assets/thumbnail/mask_black.jpeg'
-        
-      ],
-     
-white :[
-'../../../assets/public/9Zp92gi.jpeg'
-],
- blue: [
-        '../../../assets/thumbnail/mask_marine-bluejpeg.jpeg'
-        
-      ],
-       grey: [
-        '../../../assets/thumbnail/mask_grey.jpeg'
-        
-      ],
+function decreaseQty() {
+  let qtyInput = document.getElementById("quantity");
+  let value = parseInt(qtyInput.value);
+  if (value > 1) {
+    qtyInput.value = value - 1;
+  }
+}
 
+const imageData = {
+  black: ["../../../assets/thumbnail/mask_black.jpeg"],
 
- peach: [
-        '../../../assets/thumbnail/mask-peach-bud.jpeg'
-        
-      ],
-  
+  white: ["../../../assets/public/9Zp92gi.jpeg"],
+  blue: ["../../../assets/thumbnail/mask_marine-bluejpeg.jpeg"],
+  grey: ["../../../assets/thumbnail/mask_grey.jpeg"],
 
-     pristin: [
-        '../../../assets/thumbnail/mask-pristin.jpeg'
-        
-      ]
-      };
+  peach: ["../../../assets/thumbnail/mask-peach-bud.jpeg"],
 
-    function updateImages(color) {
-      const images = imageData[color];
-      if (!images) return;
+  pristin: ["../../../assets/thumbnail/mask-pristin.jpeg"],
+};
 
-      const mainImage = document.getElementById('mainImage');
-      mainImage.src = images[0];
+function updateImages(color) {
+  const images = imageData[color];
+  if (!images) return;
 
-      const container = document.getElementById('thumbnailContainer');
-      container.innerHTML = '';
+  const mainImage = document.getElementById("mainImage");
+  mainImage.src = images[0];
 
-      images.forEach((src, index) => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.className = 'img-thumbnail thumb-img img-bordered';
-        if (index === 0) img.classList.add('selected');
+  const container = document.getElementById("thumbnailContainer");
+  container.innerHTML = "";
 
-        img.onclick = () => {
-          mainImage.src = src;
-          document.querySelectorAll('.thumb-img').forEach(t => t.classList.remove('selected'));
-          img.classList.add('selected');
-        };
+  images.forEach((src, index) => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.className = "img-thumbnail thumb-img img-bordered";
+    if (index === 0) img.classList.add("selected");
 
-        container.appendChild(img);
-      });
-    }
+    img.onclick = () => {
+      mainImage.src = src;
+      document
+        .querySelectorAll(".thumb-img")
+        .forEach((t) => t.classList.remove("selected"));
+      img.classList.add("selected");
+    };
 
-    document.querySelectorAll('input[name="color"]').forEach(input => {
-      input.addEventListener('change', function () {
-        updateImages(this.id);
-      });
-    });
+    container.appendChild(img);
+  });
+}
 
-    window.onload = () => updateImages('black');
+document.querySelectorAll('input[name="color"]').forEach((input) => {
+  input.addEventListener("change", function () {
+    updateImages(this.id);
+  });
+});
+
+window.onload = () => updateImages("black");
