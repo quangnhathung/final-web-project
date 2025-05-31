@@ -73,7 +73,7 @@ nav {
 
 .nav-item:hover .icon,
 .nav-link:hover .icon {
-    color: #0d6efd;
+    color: #0088ff;
     transform: scale(1.1, 1.1);
 }
 
