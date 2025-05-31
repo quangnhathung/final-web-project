@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giỏ hàng</title>
-  <link rel="stylesheet" href="../../../bootstrap-5.3.5-dist/css/bootstrap.css">
-  <link rel="stylesheet" href="../../../bootstrap-5.3.5-dist/css/bootstrap-utilities.css">
-  <link rel="stylesheet" href="../../css/homePage/main.css" />
-  <link rel="stylesheet" href="../../../assets/bootstrap-icons.css">
-  <link rel="stylesheet" href="../../css/subPage1/Cart_user/cart.css">
-
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng</title>
+    <link
+      rel="stylesheet"
+      href="../../../bootstrap-5.3.5-dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../bootstrap-5.3.5-dist/css/bootstrap-utilities.css"
+    />
+    <link rel="stylesheet" href="../../css/homePage/default.css" />
+    <link rel="stylesheet" href="../../../assets/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../../css/subPage1/Cart_user/cart.css" />
+  </head>
 
   <body>
     <!-- -------------------------navBar------------------------------------ -->
@@ -141,56 +145,62 @@
       </div>
     </nav>
 
-    <!-- nut cuon len dau trang -->
+    <!-- ******************************************CONTENT*****************************************************-->
+    <div class="container my-5">
+      <h2 class="fw-bold mb-4">Giỏ hàng</h2>
+      <div class="row align-items-start position-relative">
+        <!-- Bên trái: giỏ hàng -->
+        <div class="col-lg-8">
+          <div class="bg-white rounded shadow-sm p-4">
+            <div
+              class="d-flex justify-content-between align-items-center fw-bold border-bottom pb-2 mb-3 cart-header"
+            >
+              <div>
+                <input class="form-check-input me-2" type="checkbox" /> Sản phẩm
+              </div>
+              <div>Đơn giá</div>
+              <div>Số lượng</div>
+              <div>Thành tiền</div>
+              <div><i class="bi bi-trash"></i></div>
+            </div>
 
-    <button id="backToTop" class="btn btn-dark rounded-circle">
-      <i class="bi bi-arrow-up-circle m-0"></i>
-    </button>
-  <!-- ******************************************CONTENT*****************************************************-->
-<div class="container my-5">
-  <h2 class="fw-bold mb-4">Giỏ hàng</h2>
-  <div class="row align-items-start position-relative">
-    <!-- Bên trái: giỏ hàng -->
-    <div class="col-lg-8">
-      <div class="bg-white rounded shadow-sm p-4">
-        <div class="d-flex justify-content-between align-items-center fw-bold border-bottom pb-2 mb-3 cart-header">
-          <div><input class="form-check-input me-2" type="checkbox"> Sản phẩm</div>
-          <div>Đơn giá</div>
-          <div>Số lượng</div>
-          <div>Thành tiền</div>
-          <div><i class="bi bi-trash"></i></div>
+            <!--giỏ hàng trống -->
+            <div class="text-center py-5">
+              <img
+                src="https://bizweb.dktcdn.net/100/325/189/themes/675912/assets/empty-cart.png?1533693226542"
+                width="300"
+                alt="empty cart"
+              />
+              <p class="text-muted">Lướt cửa hàng, mua sắm ngay</p>
+              <a href="#" class="btn btn-dark mt-2">Tiếp tục mua sắm</a>
+            </div>
+          </div>
         </div>
 
-        <!--giỏ hàng trống -->
-        <div class="text-center py-5">
-          <img src="https://bizweb.dktcdn.net/100/325/189/themes/675912/assets/empty-cart.png?1533693226542" width="300" alt="empty cart">
-          <p class="text-muted">Lướt cửa hàng, mua sắm ngay</p>
-          <a href="#" class="btn btn-dark mt-2">Tiếp tục mua sắm</a>
+        <!-- Bên phải: thanh toán -->
+        <div class="col-lg-4">
+          <div class="cart-summary-wrapper position-relative">
+            <!-- ← thêm cái này -->
+            <div class="bg-white rounded shadow-sm p-4 cart-summary">
+              <div class="d-flex justify-content-between mb-2">
+                <span>Tạm tính</span>
+                <span>0đ</span>
+              </div>
+              <div
+                class="d-flex justify-content-between mb-3 fw-bold text-danger border-top pt-2"
+              >
+                <span>Tổng tiền</span>
+                <span>0đ</span>
+              </div>
+              <button class="btn btn-dark w-100">Mua hàng (0)</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Bên phải: thanh toán -->
-    <div class="col-lg-4">
-      <div class="cart-summary-wrapper position-relative"> <!-- ← thêm cái này -->
-        <div class="bg-white rounded shadow-sm p-4 cart-summary">
-          <div class="d-flex justify-content-between mb-2">
-            <span>Tạm tính</span>
-            <span>0đ</span>
-          </div>
-          <div class="d-flex justify-content-between mb-3 fw-bold text-danger border-top pt-2">
-            <span>Tổng tiền</span>
-            <span>0đ</span>
-          </div>
-          <button class="btn btn-dark w-100">Mua hàng (0)</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-   <!--  ************************************************FOOTER**********************************************8-->
- <div class="container-fluid bg-white" id="footer">
+    <!--  ************************************************FOOTER**********************************************8-->
+    <div class="container-fluid bg-white" id="footer">
       <footer class="container-fluid bg-white">
         <div class="row">
           <div class="col-md-6">
@@ -234,59 +244,57 @@
         <span>© 2025 Web bán quần áo - Thiết kế web_Chiều T2</span>
       </div>
     </div>
-  <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const cartSummary = document.querySelector('.cart-summary');
-  const cartLeft = document.querySelector('.col-lg-8');
-  const wrapper = document.querySelector('.cart-summary-wrapper');
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cartSummary = document.querySelector(".cart-summary");
+        const cartLeft = document.querySelector(".col-lg-8");
+        const wrapper = document.querySelector(".cart-summary-wrapper");
 
- function handleScroll() {
-  const cartHeight = cartSummary.offsetHeight;
-  const cartLeftRect = cartLeft.getBoundingClientRect();
-  const cartLeftTop = cartLeftRect.top + window.scrollY;
-  const cartLeftHeight = cartLeft.offsetHeight;
+        function handleScroll() {
+          const cartHeight = cartSummary.offsetHeight;
+          const cartLeftRect = cartLeft.getBoundingClientRect();
+          const cartLeftTop = cartLeftRect.top + window.scrollY;
+          const cartLeftHeight = cartLeft.offsetHeight;
 
-  const wrapperTop = wrapper.getBoundingClientRect().top + window.scrollY;
+          const wrapperTop =
+            wrapper.getBoundingClientRect().top + window.scrollY;
 
-  const scrollY = window.scrollY;
-  const topPadding = 200;
-  const bottomMargin = 20;
+          const scrollY = window.scrollY;
+          const topPadding = 200;
+          const bottomMargin = 20;
 
-  const maxTop = cartLeftTop + cartLeftHeight - cartHeight - bottomMargin;
+          const maxTop =
+            cartLeftTop + cartLeftHeight - cartHeight - bottomMargin;
 
-  if (scrollY + topPadding > maxTop) {
-    cartSummary.style.position = 'absolute';
-    cartSummary.style.top = (maxTop - wrapperTop) + 'px';
-    cartSummary.style.left = '0';
-    cartSummary.style.right = ''; // ← XÓA RIGHT
-  } else if (scrollY + topPadding < cartLeftTop) {
-    cartSummary.style.position = 'absolute';
-    cartSummary.style.top = (cartLeftTop - wrapperTop) + 'px';
-    cartSummary.style.left = '0';
-    cartSummary.style.right = '';
-  } else {
-    cartSummary.style.position = 'fixed';
-    cartSummary.style.top = topPadding + 'px';
-    cartSummary.style.left = wrapper.getBoundingClientRect().left + 'px';
-    cartSummary.style.right = '';
-  }
-}
+          if (scrollY + topPadding > maxTop) {
+            cartSummary.style.position = "absolute";
+            cartSummary.style.top = maxTop - wrapperTop + "px";
+            cartSummary.style.left = "0";
+            cartSummary.style.right = ""; // ← XÓA RIGHT
+          } else if (scrollY + topPadding < cartLeftTop) {
+            cartSummary.style.position = "absolute";
+            cartSummary.style.top = cartLeftTop - wrapperTop + "px";
+            cartSummary.style.left = "0";
+            cartSummary.style.right = "";
+          } else {
+            cartSummary.style.position = "fixed";
+            cartSummary.style.top = topPadding + "px";
+            cartSummary.style.left =
+              wrapper.getBoundingClientRect().left + "px";
+            cartSummary.style.right = "";
+          }
+        }
 
+        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("resize", handleScroll);
+        handleScroll();
+      });
+    </script>
+  </body>
 
-  window.addEventListener('scroll', handleScroll);
-  window.addEventListener('resize', handleScroll);
-  handleScroll();
-});
-
-</script>
-
-</body>
-
-<script src="../../script/subPage1/product-detail/checkboard.js"></script>
-<script src="../../script/subPage1/product-detail/blacksheep.js"></script>
-<script src="../../../bootstrap-5.3.5-dist/js/bootstrap.esm.js"></script>
-<script src="../../../bootstrap-5.3.5-dist/js/bootstrap.js"></script>
-<script src="../../../bootstrap-5.3.5-dist/js/bootstrap.bundle.js"></script>
-
-
+  <script src="../../script/subPage1/product-detail/checkboard.js"></script>
+  <script src="../../script/subPage1/product-detail/blacksheep.js"></script>
+  <script src="../../../bootstrap-5.3.5-dist/js/bootstrap.esm.js"></script>
+  <script src="../../../bootstrap-5.3.5-dist/js/bootstrap.js"></script>
+  <script src="../../../bootstrap-5.3.5-dist/js/bootstrap.bundle.js"></script>
 </html>
