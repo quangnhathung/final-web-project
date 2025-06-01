@@ -1,27 +1,27 @@
 const acess = [
   {
-    img: "../../../assets/homePage/ACCESSORIES/1.png",
+    img: "../../assets/homePage/ACCESSORIES/1.png",
     name: "BlackSheeps Mini Shoulder Bag™",
     button: "detail-product/black-sheep.html ",
     price: "355.000đ",
     sale: "195.000d",
   },
   {
-    img: "../../../assets/homePage/ACCESSORIES/2.jpeg",
+    img: "../../assets/homePage/ACCESSORIES/2.jpeg",
     name: "/two-tone line/ Big Logo Mask™",
     button: "detail-product/BigLogoMask_TwoToneLine.html",
     price: "70.000đ",
     sale: "21.000d",
   },
   {
-    img: "../../../assets/homePage/ACCESSORIES/3.jpeg",
+    img: "../../assets/homePage/ACCESSORIES/3.jpeg",
     name: "two-tone line/ Big Logo Mask™(black)",
     button: "detail-product/BIg_mask(2).html ",
     price: "70.000đ",
     sale: "21.000d",
   },
   {
-    img: "../../../assets/homePage/ACCESSORIES/4.jpeg",
+    img: "../../assets/homePage/ACCESSORIES/4.jpeg",
     name: "5THEWAY® 학교 PEN POUCH™ (Limited)",
     button: "detail-product/pen-pouch.html ",
     price: "150.000đ",
